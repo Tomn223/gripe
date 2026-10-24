@@ -15,4 +15,5 @@ export const api = {
   dig: (topic, suggestion) =>
     req('/dig', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ topic, suggestion }) }),
   health: () => req('/health'),
+  topics: () => req('/topics'),
 }

@@ -83,11 +83,11 @@ def signal_summary(t):
     parts = []
     s = t["signals"]
     if s["money"]:
-        parts.append(f"{s['money']} mention $ amounts")
+        parts.append(f"{s['money']} mention{'s' if s['money'] == 1 else ''} $ amounts")
     if s["repeat"]:
-        parts.append(f"{s['repeat']} describe repeat failures")
+        parts.append(f"{s['repeat']} describe{'s' if s['repeat'] == 1 else ''} repeat failures")
     if s["switching"]:
-        parts.append(f"{s['switching']} say never again / switching / returning")
+        parts.append(f"{s['switching']} {'says' if s['switching'] == 1 else 'say'} never again / switching / returning")
     eng = f"{t['likes']:,} likes, {t['reposts']:,} reposts"
     return (", ".join(parts) + " · " if parts else "no strong-language signals · ") + eng
 
