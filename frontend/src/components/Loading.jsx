@@ -33,7 +33,7 @@ export default function Loading({ topic, stages, onCancel }) {
           ))}
         </ol>
         <div className="stage-detail" style={{ textAlign: 'center', marginBottom: 8 }}>
-          {elapsed} elapsed · new markets take a few minutes, cached ones are instant
+          {elapsed} elapsed · Searching X usually takes 1–3 minutes, and the full analysis 2–4. Cached markets load instantly.
         </div>
         <button className="link" onClick={onCancel}>
           Cancel

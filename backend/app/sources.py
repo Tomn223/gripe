@@ -120,7 +120,7 @@ class XaiXSearchSource:
         per_call = max(15, min(50, max_posts // max(1, len(groups))))
         posts, unverified, errors = [], 0, []
         if progress:
-            progress(0, f"Grok is searching X (0/{len(groups)} searches done, usually 1-4 min)")
+            progress(0, f"Grok is searching X (0/{len(groups)} searches done, usually 1-3 min)")
         with ThreadPoolExecutor(max_workers=len(groups)) as ex:
             futs = [ex.submit(self._one, topic, g, per_call) for g in groups]
             done = 0
