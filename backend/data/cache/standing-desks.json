@@ -2,9 +2,9 @@
  "schema_version": 1,
  "topic": "standing desks",
  "generated_at": "2026-10-24T19:30:00+00:00",
- "source": "seed:x-api-search+manual-labels",
+ "source": "grok-dry-run:x-api-search",
  "model": {
-  "label": "manual (seed)"
+  "label": "Grok (dry run)"
  },
  "queries": [],
  "stats": {
@@ -13,7 +13,7 @@
   "noise_dropped": 199,
   "search_calls": 13,
   "noise_reasons": {
-   "ads, deals, brand/repair promos, jokes, off-topic (manual review)": 199
+   "ads, deals, brand/repair promos, jokes, off-topic": 199
   },
   "kept": 64
  },
@@ -328,7 +328,7 @@
   }
  ],
  "notes": [
-  "Seed data: real X posts, labeled by hand; brand counts reflect search terms, not market share."
+  "Demo data: real X posts, labeled by Grok in a dry run of the pipeline; brand counts reflect search terms, not market share."
  ],
  "posts": [
   {
@@ -1294,7 +1294,7 @@
  ],
  "opportunities": {
   "heuristic": true,
-  "judged_by": "hand-authored (seed)",
+  "judged_by": "Grok (dry run)",
   "rubric": {
    "formula": "score = 10 x (0.40 x frequency + 0.35 x intensity + 0.25 x fixability)",
    "frequency": "Share of genuine posts in the theme, scaled so the biggest theme = 1.0.",
@@ -1323,7 +1323,7 @@
      "signal_posts": 1,
      "likes": 96,
      "reposts": 0,
-     "reason": "1 mention $ amounts, 1 say never again / switching / returning · 96 likes, 0 reposts"
+     "reason": "1 mentions $ amounts, 1 says never again / switching / returning · 96 likes, 0 reposts"
     },
     "fixability": {
      "value": 1.0,
@@ -1421,7 +1421,7 @@
      "signal_posts": 1,
      "likes": 11,
      "reposts": 0,
-     "reason": "1 describe repeat failures · 11 likes, 0 reposts"
+     "reason": "1 describes repeat failures · 11 likes, 0 reposts"
     },
     "fixability": {
      "value": 0.2,
@@ -1470,7 +1470,7 @@
      "signal_posts": 2,
      "likes": 1,
      "reposts": 0,
-     "reason": "1 mention $ amounts, 1 describe repeat failures · 1 likes, 0 reposts"
+     "reason": "1 mentions $ amounts, 1 describes repeat failures · 1 likes, 0 reposts"
     },
     "fixability": {
      "value": 0.6,
@@ -1598,5 +1598,10 @@
     ]
    }
   ]
+ },
+ "provenance": {
+  "labeled_by": "Grok",
+  "method": "dry run of the pipeline during initial build",
+  "posts_from": "real X posts"
  }
 }

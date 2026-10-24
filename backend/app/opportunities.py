@@ -93,7 +93,7 @@ def signal_summary(t):
 
 
 def build_opportunities(posts, judgments=None, source="heuristic"):
-    """judgments: {theme_name: {fixability, fixability_reason, why_opening, evidence_ids}} (from Grok or hand-authored)."""
+    """judgments: {theme_name: {fixability, fixability_reason, why_opening, evidence_ids}} (from Grok)."""
     judgments = {(k or "").lower(): v for k, v in (judgments or {}).items()}
     items = []
     for t in theme_stats(posts):

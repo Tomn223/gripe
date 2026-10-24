@@ -67,7 +67,7 @@ export default function Landing({ onSubmit, examples, error }) {
           <li><b>3</b> You see ranked pain points and opportunities</li>
         </ol>
       </div>
-      <footer className="landing-foot">Built on real X posts. Live searches are labeled by Grok.</footer>
+      <footer className="landing-foot">Built on real X posts, labeled by Grok.</footer>
     </main>
   )
 }

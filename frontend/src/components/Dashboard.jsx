@@ -15,6 +15,16 @@ function fmtDate(d) {
   return new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })
 }
 
+function provenanceLine(result) {
+  const p = result.provenance
+  const live = p ? /live/i.test(p.method || '') : result.source?.startsWith('live')
+  if (live) {
+    const m = (p?.model || result.model?.label || '').split('-').slice(0, 2).join('-')
+    return `Real X posts · labeled live by Grok${m ? ` (${m})` : ''}`
+  }
+  return 'Real X posts · labeled and grouped by Grok'
+}
+
 export default function Dashboard({ result, onHome, onSearch }) {
   const [panel, setPanel] = useState(null) // {title, subtitle, posts|category}
   const [dig, setDig] = useState(null) // {suggestion, loading, answer, error}
@@ -237,9 +247,20 @@ export default function Dashboard({ result, onHome, onSearch }) {
         )}
       </section>
 
+      <details className="how-grok">
+        <summary>How Grok powers this</summary>
+        <ol>
+          <li><b>x_search</b>: Grok searches X for real posts about the market</li>
+          <li><b>Relevance filter</b>: Grok drops ads, jokes, news, and off-topic posts</li>
+          <li><b>Per-post labeling</b>: sentiment, pain point, brand, and a one-line gist for every post</li>
+          <li><b>Theme grouping</b>: Grok clusters pain points into ranked themes</li>
+          <li><b>Summary and dig-deeper chips</b>: the headline and follow-up questions</li>
+          <li><b>Opportunity judging</b>: fixability and why each theme is an opening</li>
+        </ol>
+      </details>
+
       <footer className="foot">
-        Source: {result.source?.startsWith('live') ? 'live X search via Grok' : 'cached real X posts'} · labels:{' '}
-        {result.model?.label || 'Grok'} · every post links to x.com
+        {provenanceLine(result)} · every post links to x.com
       </footer>
 
       {panel && <PostsPanel panel={panel} onClose={() => setPanel(null)} />}

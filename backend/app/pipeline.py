@@ -228,6 +228,8 @@ class Pipeline:
                              digs[:4], stats, source=f"live:{self.source.name}",
                              model={"search": self.s.search_model, "label": self.s.label_model},
                              queries=queries, volume=volume)
+        doc["provenance"] = {"labeled_by": "Grok", "method": "live Grok API pipeline", "posts_from": "real X posts",
+                             "model": self.s.label_model}
         judged = {}
         try:  # one extra Grok call: fixability + why-an-opening + evidence ids for every theme
             from .opportunities import judge_with_grok

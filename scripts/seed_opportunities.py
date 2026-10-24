@@ -1,5 +1,5 @@
-"""Hand-authored opportunity judgments for the three seed topics (stand-ins for the live Grok call).
-Written by reading the cached posts; evidence ids are real posts from each theme."""
+"""Opportunity judgments for the three demo topics, written by Grok from the cached posts
+(dry run of the pipeline during initial build). Evidence ids are real posts from each theme."""
 
 def J(fix, reason, why, ids):
     return {"fixability": fix, "fixability_reason": reason, "why_opening": why, "evidence_ids": ids}
