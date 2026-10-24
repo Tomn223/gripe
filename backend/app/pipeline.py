@@ -226,5 +226,14 @@ class Pipeline:
                              digs[:4], stats, source=f"live:{self.source.name}",
                              model={"search": self.s.search_model, "label": self.s.label_model},
                              queries=queries, volume=volume)
+        judged = {}
+        try:  # one extra Grok call: fixability + why-an-opening + evidence ids for every theme
+            from .opportunities import judge_with_grok
+            judged = judge_with_grok(self.grok, self.s.label_model, topic, labeled)
+        except Exception:
+            judged = {}
+        from .opportunities import build_opportunities
+        doc["opportunities"] = build_opportunities(doc["posts"], judged, source="grok" if judged else "heuristic")
+        doc["stats"]["llm_usage"] = dict(self.grok.usage)
         rep.update("summary", "done", None, "done")
         return doc

@@ -3,6 +3,7 @@ import { Bar, BarChart, Cell, LabelList, ResponsiveContainer, Tooltip, XAxis, YA
 import { api } from '../api'
 import Logo from './Logo'
 import PostsPanel from './PostsPanel'
+import Opportunities from './Opportunities'
 
 const SENT = [
   { key: 'negative', label: 'Negative', color: '#ff5a36' },
@@ -184,6 +185,8 @@ export default function Dashboard({ result, onHome, onSearch }) {
           )}
         </aside>
       </div>
+
+      <Opportunities result={result} onOpenPosts={openCategory} />
 
       <section className="card dig-card">
         <div className="card-head">

@@ -82,6 +82,9 @@ def public_view(doc):
     """Dashboard payload: everything except the full post list (served by /posts)."""
     d = {k: v for k, v in doc.items() if k != "posts"}
     d["date_range"] = date_range(doc["posts"])
+    if not d.get("opportunities"):  # older caches: deterministic scores only, fixability unjudged
+        from .opportunities import build_opportunities
+        d["opportunities"] = build_opportunities(doc["posts"])
     return d
 
 

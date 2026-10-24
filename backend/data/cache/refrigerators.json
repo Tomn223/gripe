@@ -1326,5 +1326,263 @@
    "wish": "",
    "representativeness": 0.39
   }
- ]
+ ],
+ "opportunities": {
+  "heuristic": true,
+  "judged_by": "hand-authored (seed)",
+  "rubric": {
+   "formula": "score = 10 x (0.40 x frequency + 0.35 x intensity + 0.25 x fixability)",
+   "frequency": "Share of genuine posts in the theme, scaled so the biggest theme = 1.0.",
+   "intensity": "70% text signals (share of posts with repeat-failure, $ amount, or switching/'never again' language, plus a bonus per signal type in 20%+ of posts) + 30% likes and reposts.",
+   "fixability": "Grok's call: product/design problem = 1.0, mixed = 0.6, structural (regulation, physics, behavior, infrastructure) = 0.2.",
+   "min_posts": 3
+  },
+  "items": [
+   {
+    "theme": "Ice maker & water dispenser",
+    "count": 21,
+    "share": 0.323,
+    "score": 8.0,
+    "frequency": {
+     "value": 1.0,
+     "share": 0.323,
+     "reason": "21 posts, 32% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.433,
+     "signals": {
+      "repeat": 5,
+      "money": 3,
+      "switching": 2
+     },
+     "signal_posts": 8,
+     "likes": 30,
+     "reposts": 1,
+     "reason": "3 mention $ amounts, 5 describe repeat failures, 2 say never again / switching / returning · 30 likes, 1 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Ice maker reliability is a component design choice; a sturdier, swappable module is buildable."
+    },
+    "why_opening": "The single biggest theme: owners describe the same ice maker replaced three times or failing again two months after a fix. A reliable, user-replaceable ice module would hit the most common gripe head-on.",
+    "evidence": [
+     {
+      "id": "2105454850540437644",
+      "url": "https://x.com/tfnelson091/status/2105454850540437644",
+      "username": "tfnelson091",
+      "gist": "6-yr-old fridge had ice maker replaced 3 times; 70s fridge still works",
+      "text": "@ARmastrangelo @GE_Appliances I have a refrigerator from the 70’s in my garage. It still beeps if the door is left open. My 6 year old fridge has had the ice maker replaced 3 times. Apparently it’s the govt mandates that are so expensive, the quality of the appliance is dirt. 😡",
+      "likes": 1,
+      "reposts": 0
+     },
+     {
+      "id": "2105387799994372288",
+      "url": "https://x.com/dstidham2/status/2105387799994372288",
+      "username": "dstidham2",
+      "gist": "GE fridge was noisy and ice maker kept failing even after repair",
+      "text": "@ARmastrangelo @GE_Appliances I bought a GE fridge and the thing sucked.  It was super noisy and the ice maker stopped working. We fixed the Icemaker and that lasted maybe 2 months and stopped again. At least it was consistent about not working.",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Not cooling / compressor failure",
+    "count": 11,
+    "share": 0.169,
+    "score": 6.7,
+    "frequency": {
+     "value": 0.523,
+     "share": 0.169,
+     "reason": "11 posts, 17% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.598,
+     "signals": {
+      "repeat": 4,
+      "money": 2,
+      "switching": 1
+     },
+     "signal_posts": 5,
+     "likes": 145,
+     "reposts": 88,
+     "reason": "2 mention $ amounts, 4 describe repeat failures, 1 say never again / switching / returning · 145 likes, 88 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Compressor and control-board durability is an engineering and sourcing choice."
+    },
+    "why_opening": "Posts contrast decades-old garage fridges with compressors dying at 4-5 years, just past warranty. A longer compressor warranty backed by sturdier parts is a clear pitch.",
+    "evidence": [
+     {
+      "id": "2105433490649161755",
+      "url": "https://x.com/ChanatLucine/status/2105433490649161755",
+      "username": "ChanatLucine",
+      "gist": "LG compressor died at 5y2m, just past warranty; repair = price of new",
+      "text": "@ARmastrangelo @GE_Appliances We have an LG fridge with dead compressor at 5 yrs and 2 months. Warranty runs out at 5 yrs. Cost the same to repair as buy new. The problem, all fridges rate &lt;20% in consumer satisfaction according to consumer reports. Even the ones they recommen",
+      "likes": 1,
+      "reposts": 0
+     },
+     {
+      "id": "2105460880179663289",
+      "url": "https://x.com/caymankai40/status/2105460880179663289",
+      "username": "caymankai40",
+      "gist": "$2,500 Samsung needed a new compressor at 6 months; old garage fridges fine",
+      "text": "@ARmastrangelo @GE_Appliances We have a 35 and a 20 year old fridge in the garage and they still great. Meanwhile my 4 yr old Samsung that I bout brand new for $2500 that looks similar to your LG had to have the compressor replaced after 6 months. Luckily I had the warranty and o",
+      "likes": 1,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Repair, warranty & service",
+    "count": 13,
+    "share": 0.2,
+    "score": 6.1,
+    "frequency": {
+     "value": 0.619,
+     "share": 0.2,
+     "reason": "13 posts, 20% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.594,
+     "signals": {
+      "repeat": 3,
+      "money": 5,
+      "switching": 1
+     },
+     "signal_posts": 7,
+     "likes": 1,
+     "reposts": 0,
+     "reason": "5 mention $ amounts, 3 describe repeat failures, 1 say never again / switching / returning · 1 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.6,
+     "label": "mixed",
+     "reason": "Parts supply and service networks are operational, not just product design."
+    },
+    "why_opening": "Owners wait 8 weeks for a part on a $3,000 fridge or get abandoned mid-repair. An entrant with stocked parts and direct service could compete on support.",
+    "evidence": [
+     {
+      "id": "2107962207929577951",
+      "url": "https://x.com/fsteffanjr/status/2107962207929577951",
+      "username": "fsteffanjr",
+      "gist": "8+ week wait for water filter housing part; $400 + labor",
+      "text": "@SamsungUS 8 weeks minimum for the part to fix my 2 year old $3,000 Samsung refrigerator with a broken water filter housing. $400 + labor to replace it once the part becomes available. Apparently so many are breaking you can't keep the replacement parts in stock. In the meantime,",
+      "likes": 0,
+      "reposts": 0
+     },
+     {
+      "id": "2114036857315193052",
+      "url": "https://x.com/sajjadmanal/status/2114036857315193052",
+      "username": "sajjadmanal",
+      "gist": "Service visit abandoned; fridge still not cooling and food spoiling",
+      "text": "Worst customer service experience with @GodrejAppliance . Scheduled a refrigerator service, &amp; your team has completely abandoned the issue. The fridge is still not cooling, food is spoiling, &amp; no one cares to resolve it. Absolute harassment. Resolve this immediately. #god",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Durability & longevity",
+    "count": 5,
+    "share": 0.077,
+    "score": 5.3,
+    "frequency": {
+     "value": 0.238,
+     "share": 0.077,
+     "reason": "5 posts, 8% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.527,
+     "signals": {
+      "repeat": 0,
+      "money": 1,
+      "switching": 0
+     },
+     "signal_posts": 1,
+     "likes": 434,
+     "reposts": 25,
+     "reason": "1 mention $ amounts · 434 likes, 25 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Fragile plastic parts and failure-prone control boards are design decisions."
+    },
+    "why_opening": "People say control-board failures make repair cost more than replacement and they've given up replacing $200 plastic parts. Durable, repairable parts speak directly to this.",
+    "evidence": [
+     {
+      "id": "2105416658852397100",
+      "url": "https://x.com/MAPatriot67/status/2105416658852397100",
+      "username": "MAPatriot67",
+      "gist": "5-yr Frigidaire's control 'brain' failed; cheaper to replace than repair",
+      "text": "@ARmastrangelo @GE_Appliances I had the same thing happen with a 5 year old Frigidaire French Door Refrigerator some years back. The repair guy said it would be more expensive to repair than replace. I did some research and found out that these fridges have \"a brain\" that basical",
+      "likes": 413,
+      "reposts": 24
+     },
+     {
+      "id": "2105857009757438026",
+      "url": "https://x.com/jewishdad1/status/2105857009757438026",
+      "username": "jewishdad1",
+      "gist": "Every plastic part (ice maker, filter housing, drawers) broke",
+      "text": "@TerenceKelly84 thankfully our samsung fridge &amp; freezer still cools properly but every plastic thing (ice maker, water filter housing, drawers) has broken on it. I've given up on replacing every 200$ plastic thing and am just waiting for it to die fully before replacing it",
+      "likes": 1,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Smart features & apps",
+    "count": 9,
+    "share": 0.138,
+    "score": 4.8,
+    "frequency": {
+     "value": 0.427,
+     "share": 0.138,
+     "reason": "9 posts, 14% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.173,
+     "signals": {
+      "repeat": 0,
+      "money": 0,
+      "switching": 0
+     },
+     "signal_posts": 0,
+     "likes": 227,
+     "reposts": 31,
+     "reason": "no strong-language signals · 227 likes, 31 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Leaving out connectivity is simply a design choice."
+    },
+    "why_opening": "Posts ask why a fridge needs a software update or an internet connection. A deliberately simple, reliable fridge is a positioning opening, though the theme is small.",
+    "evidence": [
+     {
+      "id": "2109671043572850731",
+      "url": "https://x.com/stephenituruka/status/2109671043572850731",
+      "username": "stephenituruka",
+      "gist": "Doesn't want a smart fridge; wants dumb, cheap, reliable",
+      "text": "@Bonks_n_Stonks *super retarded 😂. I don't need a smart fridge, it is stupid having a smart fridge. I just need dumb, cheap and reliable home appliances.",
+      "likes": 1,
+      "reposts": 0
+     },
+     {
+      "id": "2111088324408684896",
+      "url": "https://x.com/0xZaco/status/2111088324408684896",
+      "username": "0xZaco",
+      "gist": "Annoyed a fridge has a pending software update",
+      "text": "why does my fridge have a software update pending. it's a fridge",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   }
+  ]
+ }
 }

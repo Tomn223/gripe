@@ -1291,5 +1291,312 @@
    "wish": "",
    "representativeness": 0.227
   }
- ]
+ ],
+ "opportunities": {
+  "heuristic": true,
+  "judged_by": "hand-authored (seed)",
+  "rubric": {
+   "formula": "score = 10 x (0.40 x frequency + 0.35 x intensity + 0.25 x fixability)",
+   "frequency": "Share of genuine posts in the theme, scaled so the biggest theme = 1.0.",
+   "intensity": "70% text signals (share of posts with repeat-failure, $ amount, or switching/'never again' language, plus a bonus per signal type in 20%+ of posts) + 30% likes and reposts.",
+   "fixability": "Grok's call: product/design problem = 1.0, mixed = 0.6, structural (regulation, physics, behavior, infrastructure) = 0.2.",
+   "min_posts": 3
+  },
+  "items": [
+   {
+    "theme": "Motor & electronics failures",
+    "count": 12,
+    "share": 0.188,
+    "score": 6.5,
+    "frequency": {
+     "value": 0.803,
+     "share": 0.188,
+     "reason": "12 posts, 19% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.217,
+     "signals": {
+      "repeat": 0,
+      "money": 1,
+      "switching": 1
+     },
+     "signal_posts": 1,
+     "likes": 96,
+     "reposts": 0,
+     "reason": "1 mention $ amounts, 1 say never again / switching / returning · 96 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Motor, leg and control-box reliability is engineering."
+    },
+    "why_opening": "Desks stuck upright for weeks and single legs dying within months. A more reliable frame with easy leg swaps is a clear entrant angle.",
+    "evidence": [
+     {
+      "id": "2036854834570096694",
+      "url": "https://x.com/PatCarino/status/2036854834570096694",
+      "username": "PatCarino",
+      "gist": "$1,000 Wayfair desk stuck upright for 3 weeks; seller would only refund, not fix",
+      "text": "I bought $1000 standing desk from Wayfair on sale for $500 for my home office and the thing has been stuck in the upright position for 3 weeks. \n\nTried to fix or replace it but they insisted on a full refund instead. \n\nNow I have a pile of garbage in my basement and my feet hurt.",
+      "likes": 16,
+      "reposts": 0
+     },
+     {
+      "id": "2044448991954207069",
+      "url": "https://x.com/gns840839/status/2044448991954207069",
+      "username": "gns840839",
+      "gist": "Motor broke within months; warranty hard to track down; now uses a manual riser on top",
+      "text": "@it_unprofession I bought a fancy standing desk. It took a while to assemble. The motor broke within a few months, warranty is hard to track down. Spent hours troubleshooting it. So I now have a small manual elevation platform on top of my broken \"standing\" desk. The struggle is ",
+      "likes": 12,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Foot, leg & back pain from standing",
+    "count": 15,
+    "share": 0.234,
+    "score": 5.9,
+    "frequency": {
+     "value": 1.0,
+     "share": 0.234,
+     "reason": "15 posts, 23% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.118,
+     "signals": {
+      "repeat": 0,
+      "money": 0,
+      "switching": 0
+     },
+     "signal_posts": 0,
+     "likes": 75,
+     "reposts": 0,
+     "reason": "no strong-language signals · 75 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.6,
+     "label": "mixed",
+     "reason": "Partly physiology; products can only encourage alternating, not remove the strain of standing."
+    },
+    "why_opening": "Owners report sore feet, knees, and even plantar fasciitis after standing too long. Products that push alternating sit/stand rather than standing all day could address it.",
+    "evidence": [
+     {
+      "id": "2113862823235489828",
+      "url": "https://x.com/shouldveknown11/status/2113862823235489828",
+      "username": "shouldveknown11",
+      "gist": "A year of standing-desk use led to plantar fasciitis that won't go away",
+      "text": "I used a standing desk for a year and then developed plantar fasciitis as a result. It is beyond frustrating as I love to walk. It has been 3 months and the pain doesnt go away. Any tips?",
+      "likes": 31,
+      "reposts": 0
+     },
+     {
+      "id": "2090085807982051503",
+      "url": "https://x.com/PecereBattista/status/2090085807982051503",
+      "username": "PecereBattista",
+      "gist": "Feet hurt instead of back now: 'just moving the problem around'",
+      "text": "started using a standing desk and now my feet hurt instead of my back so I guess we're just moving the problem around",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Bought it, never stand at it",
+    "count": 15,
+    "share": 0.234,
+    "score": 4.8,
+    "frequency": {
+     "value": 1.0,
+     "share": 0.234,
+     "reason": "15 posts, 23% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.095,
+     "signals": {
+      "repeat": 1,
+      "money": 0,
+      "switching": 0
+     },
+     "signal_posts": 1,
+     "likes": 11,
+     "reposts": 0,
+     "reason": "1 describe repeat failures · 11 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.2,
+     "label": "structural",
+     "reason": "This is habit and behavior, not hardware."
+    },
+    "why_opening": "Many owners say the desk became an 'expensive shelf' or they forget it adjusts. Nudges could help, but it's a behavior problem a better desk may not fix.",
+    "evidence": [
+     {
+      "id": "2109490743521992776",
+      "url": "https://x.com/onchainnotes_/status/2109490743521992776",
+      "username": "onchainnotes_",
+      "gist": "Converter used for 22 minutes, now an expensive shelf for a plant",
+      "text": "standing desk converter arrived friday. stood for 22 minutes this morning, sat back down, and now it's a very expensive shelf for my pothos",
+      "likes": 0,
+      "reposts": 0
+     },
+     {
+      "id": "2102473807655059594",
+      "url": "https://x.com/GeorfeIsHere/status/2102473807655059594",
+      "username": "GeorfeIsHere",
+      "gist": "Bought it for back pain but keeps forgetting to adjust it",
+      "text": "Tell me why i bought this adjustable standing desk specifically to help with my back pain from hunching over to reach things all the time and i keep forgetting i can adjust it\n\nActually suffering for no reason",
+      "likes": 2,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Warranty & support",
+    "count": 3,
+    "share": 0.047,
+    "score": 4.8,
+    "frequency": {
+     "value": 0.201,
+     "share": 0.047,
+     "reason": "3 posts, 5% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.704,
+     "signals": {
+      "repeat": 1,
+      "money": 1,
+      "switching": 0
+     },
+     "signal_posts": 2,
+     "likes": 1,
+     "reposts": 0,
+     "reason": "1 mention $ amounts, 1 describe repeat failures · 1 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.6,
+     "label": "mixed",
+     "reason": "Parts logistics and support staffing are operational."
+    },
+    "why_opening": "One owner waited 5+ months as a replacement leg was delayed a fourth time. Fast, dependable parts support would stand out.",
+    "evidence": [
+     {
+      "id": "2049008937211445265",
+      "url": "https://x.com/_keegster/status/2049008937211445265",
+      "username": "_keegster",
+      "gist": "Waited 5+ months for a warranty replacement leg, delayed a 4th time",
+      "text": "Hey if you ever want to get a standing desk with a really nice warranty on said desk and wait over 5 months to be informed that the replacement leg is delayed for the 4th time for another 2 months, go with @autonomous_labs !",
+      "likes": 0,
+      "reposts": 0
+     },
+     {
+      "id": "2111142953196601495",
+      "url": "https://x.com/Karthikyk0e/status/2111142953196601495",
+      "username": "Karthikyk0e",
+      "gist": "₹30,000 desk arrived damaged; support gave conflicting compensation promises",
+      "text": "@amazonIN @AmazonHelp My ₹30,000 ARTIKEL standing desk arrived damaged. Despite photos, support agents gave conflicting compensation promises. Management offered only a return, even though it’s fully assembled. Please review and offer a fair resolution.",
+      "likes": 1,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Assembly & delivery damage",
+    "count": 6,
+    "share": 0.094,
+    "score": 4.6,
+    "frequency": {
+     "value": 0.402,
+     "share": 0.094,
+     "reason": "6 posts, 9% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.137,
+     "signals": {
+      "repeat": 0,
+      "money": 0,
+      "switching": 0
+     },
+     "signal_posts": 0,
+     "likes": 545,
+     "reposts": 13,
+     "reason": "no strong-language signals · 545 likes, 13 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Packaging and assembly steps are design choices."
+    },
+    "why_opening": "Posts describe a full day of assembly and a cracked top on unboxing. Quicker assembly and better packaging are fixable.",
+    "evidence": [
+     {
+      "id": "2108559123206037890",
+      "url": "https://x.com/thrtysvnth/status/2108559123206037890",
+      "username": "thrtysvnth",
+      "gist": "Took a whole day to assemble the standing desk",
+      "text": "invested in a standing desk, took a whole day to assemble it, then had to stand and watch a P6 kms",
+      "likes": 544,
+      "reposts": 13
+     },
+     {
+      "id": "2108643304782864527",
+      "url": "https://x.com/Faelor/status/2108643304782864527",
+      "username": "Faelor",
+      "gist": "Unboxed UPLIFT desk: rubberwood top arrived cracked",
+      "text": "I bought a standing desk from @UPLIFTDesk years ago, but never set it up. Began unboxing recently. Assembled the legs; easy. Unpacked the rubberwood desktop and... it's cracked! Ugh. Noo!\n\nFrom what I read, the warranty should cover it.\n2026 has been one thing after another. 😩 ht",
+      "likes": 1,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Wobble & stability",
+    "count": 5,
+    "share": 0.078,
+    "score": 4.4,
+    "frequency": {
+     "value": 0.333,
+     "share": 0.078,
+     "reason": "5 posts, 8% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.156,
+     "signals": {
+      "repeat": 0,
+      "money": 0,
+      "switching": 0
+     },
+     "signal_posts": 0,
+     "likes": 35,
+     "reposts": 0,
+     "reason": "no strong-language signals · 35 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Frame rigidity is an engineering problem."
+    },
+    "why_opening": "Buyers say even $1k+ desks wobble monitors, worse with a walking pad. A frame built for walking-pad setups is a niche opening.",
+    "evidence": [
+     {
+      "id": "2112780076869877902",
+      "url": "https://x.com/MattBlagg/status/2112780076869877902",
+      "username": "MattBlagg",
+      "gist": "Every review says monitors wobble, even on $1k+ desks; walking pad makes it worse",
+      "text": "Does anyone know a standing desk that doesn’t cause your monitors to wobble? Every review I read says it causes that even the expensive 1k+ ones. Will be pairing it with a walking pad which will just exacerbate the issue.",
+      "likes": 6,
+      "reposts": 0
+     },
+     {
+      "id": "2093411857273139621",
+      "url": "https://x.com/basedlantz/status/2093411857273139621",
+      "username": "basedlantz",
+      "gist": "Desk shakes too much to use with a walking pad",
+      "text": "@anotherrmare I bought a walking pad and a standing desk, but the desk shakes too much to use while walking, so unless you buy a super stable standing desk, or can study without touching the desk, I think outside is best.",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   }
+  ]
+ }
 }

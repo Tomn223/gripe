@@ -11,6 +11,9 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 from app.analysis import build_document  # noqa: E402
 from app.cache import Cache  # noqa: E402
+from app.opportunities import build_opportunities  # noqa: E402
+sys.path.insert(0, str(ROOT / "scripts"))
+from seed_opportunities import SEED_JUDGMENTS  # noqa: E402
 
 META = {
  "refrigerators": {
@@ -134,6 +137,7 @@ def main():
                              model={"label": "manual (seed)"}, volume=volume,
                              notes=["Seed data: real X posts, labeled by hand; brand counts reflect search terms, not market share."],
                              generated_at="2026-10-24T19:30:00+00:00")
+        doc["opportunities"] = build_opportunities(doc["posts"], SEED_JUDGMENTS.get(topic), source="hand-authored (seed)")
         cache.put(topic, doc)
         print(f"{topic}: {len(posts)} posts, top: {[c['name'] + ' ' + str(c['count']) for c in doc['categories'][:3]]}")
 

@@ -1467,5 +1467,312 @@
    "wish": "",
    "representativeness": 0.227
   }
- ]
+ ],
+ "opportunities": {
+  "heuristic": true,
+  "judged_by": "hand-authored (seed)",
+  "rubric": {
+   "formula": "score = 10 x (0.40 x frequency + 0.35 x intensity + 0.25 x fixability)",
+   "frequency": "Share of genuine posts in the theme, scaled so the biggest theme = 1.0.",
+   "intensity": "70% text signals (share of posts with repeat-failure, $ amount, or switching/'never again' language, plus a bonus per signal type in 20%+ of posts) + 30% likes and reposts.",
+   "fixability": "Grok's call: product/design problem = 1.0, mixed = 0.6, structural (regulation, physics, behavior, infrastructure) = 0.2.",
+   "min_posts": 3
+  },
+  "items": [
+   {
+    "theme": "Cheap build quality",
+    "count": 7,
+    "share": 0.096,
+    "score": 7.7,
+    "frequency": {
+     "value": 0.585,
+     "share": 0.096,
+     "reason": "7 posts, 10% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.831,
+     "signals": {
+      "repeat": 2,
+      "money": 2,
+      "switching": 3
+     },
+     "signal_posts": 6,
+     "likes": 38,
+     "reposts": 0,
+     "reason": "2 mention $ amounts, 2 describe repeat failures, 3 say never again / switching / returning · 38 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Component quality is a sourcing and design choice."
+    },
+    "why_opening": "Budget bikes arrive with flat tires and batteries that won't charge past 52%, or need half their parts swapped. Solid quality at a mid price is an opening.",
+    "evidence": [
+     {
+      "id": "2081865758716690744",
+      "url": "https://x.com/CanadianPylon/status/2081865758716690744",
+      "username": "CanadianPylon",
+      "gist": "Cheap e-bikes are garbage; rode a $1,500 one twice and sold it",
+      "text": "@Martyupnorth They are garbage. To make them even remotely usable, half the components need to be swapped out as they are made from absolute bottom of the barrel stuff that just looks the part. \n\nI bought one 2 years ago for 1500 bucks. Rode it twice. Realized what trash it is, a",
+      "likes": 15,
+      "reposts": 0
+     },
+     {
+      "id": "2103455926329954615",
+      "url": "https://x.com/jackie007/status/2103455926329954615",
+      "username": "jackie007",
+      "gist": "Walmart e-bike arrived with 2 flats; battery won't charge past 52%",
+      "text": "DO Not buy an electric bike from #Walmart listed by @ASKGO Ebike Direct!! Haven’t even been able to ride it!! Received it a month ago with 2 flat tires and a hole in the intertube. The battery won’t charge more than 52% before the charger overheats. Walmart doesn’t carry  the",
+      "likes": 1,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Repairs, parts & service delays",
+    "count": 10,
+    "share": 0.137,
+    "score": 6.8,
+    "frequency": {
+     "value": 0.835,
+     "share": 0.137,
+     "reason": "10 posts, 14% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.551,
+     "signals": {
+      "repeat": 2,
+      "money": 2,
+      "switching": 1
+     },
+     "signal_posts": 3,
+     "likes": 67,
+     "reposts": 0,
+     "reason": "2 mention $ amounts, 2 describe repeat failures, 1 say never again / switching / returning · 67 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.6,
+     "label": "mixed",
+     "reason": "Service networks and parts logistics are partly operational, not just the bike."
+    },
+    "why_opening": "Riders wait months for warranty parts, and shops refuse e-bikes bought online. Mobile repair or a brand with stocked parts could win here.",
+    "evidence": [
+     {
+      "id": "2111834688151031867",
+      "url": "https://x.com/BiizIdeaLab/status/2111834688151031867",
+      "username": "BiizIdeaLab",
+      "gist": "Flat tire, three bike shops refused: many won't fix bikes bought online",
+      "text": "Her e-bike got a flat, and three bike shops said no.\n\nMany shops won't fix e-bikes bought online. If you fix cars, you can fix them in the rider's driveway on weekends for $120 a visit plus parts, about $1,440 a month https://t.co/tVa3qA2Yzp",
+      "likes": 4,
+      "reposts": 0
+     },
+     {
+      "id": "2110993031579197808",
+      "url": "https://x.com/KodiLetsPlays/status/2110993031579197808",
+      "username": "KodiLetsPlays",
+      "gist": "E-bike out of commission over a month waiting for replacement parts",
+      "text": "It's been over a months since my ebike has been out of commission and I have been jerked around and told to keep waiting, keep waiting for replacement parts. Fuck man I hate dealing with customer service who just can't do anything.",
+      "likes": 3,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Battery replacement cost",
+    "count": 6,
+    "share": 0.082,
+    "score": 6.7,
+    "frequency": {
+     "value": 0.5,
+     "share": 0.082,
+     "reason": "6 posts, 8% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.632,
+     "signals": {
+      "repeat": 1,
+      "money": 3,
+      "switching": 0
+     },
+     "signal_posts": 4,
+     "likes": 9,
+     "reposts": 0,
+     "reason": "3 mention $ amounts, 1 describe repeat failures · 9 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Pack pricing and compatibility are business and design choices."
+    },
+    "why_opening": "Replacement packs run $600-950, sometimes more than the bike. Affordable, certified replacement batteries are a clear gap.",
+    "evidence": [
+     {
+      "id": "2093847433738649914",
+      "url": "https://x.com/soil_owner/status/2093847433738649914",
+      "username": "soil_owner",
+      "gist": "$950 to replace a Cannondale battery; a $750 conversion kit was better",
+      "text": "@Mont_Jiang Similarly, I had a Canondale e-bike someone gave me, and the battery died. It was $950 to replace the battery.\n\nI got an entire e-bike conversion kit from a Chinese manufacturer called Bafang for $750 to convert my old favorite bike, which is now better than the Canon",
+      "likes": 3,
+      "reposts": 0
+     },
+     {
+      "id": "2062604464733724938",
+      "url": "https://x.com/Transgoddess77/status/2062604464733724938",
+      "username": "Transgoddess77",
+      "gist": "E-bike replacement battery costs $600 CAD",
+      "text": "@loserboy424 Ebike replacement battery 600 Canadian",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Battery dies mid-ride / range",
+    "count": 12,
+    "share": 0.164,
+    "score": 6.0,
+    "frequency": {
+     "value": 1.0,
+     "share": 0.164,
+     "reason": "12 posts, 16% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.138,
+     "signals": {
+      "repeat": 0,
+      "money": 0,
+      "switching": 0
+     },
+     "signal_posts": 0,
+     "likes": 138,
+     "reposts": 0,
+     "reason": "no strong-language signals · 138 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.6,
+     "label": "mixed",
+     "reason": "Battery energy density is physics-limited, though range and weight design help."
+    },
+    "why_opening": "When the battery dies, riders are left pushing a much heavier bike. Better range planning or lighter assist could ease it.",
+    "evidence": [
+     {
+      "id": "2109323420727140728",
+      "url": "https://x.com/miIdjoy/status/2109323420727140728",
+      "username": "miIdjoy",
+      "gist": "Hates when the battery dies and it becomes 'just a heavy ass bike'",
+      "text": "i hate when my ebike battery dies and it turns into just a heavy ass bike",
+      "likes": 1,
+      "reposts": 0
+     },
+     {
+      "id": "2077462654189547758",
+      "url": "https://x.com/Misty7040538933/status/2077462654189547758",
+      "username": "Misty7040538933",
+      "gist": "Battery died halfway to work; heavier than a regular bike with no assist",
+      "text": "My e bike battery died halfway thru my ride to work I should bring out the regular bike cuz the bike ride was no assistance to get there faster on a *much heavier* bike 😭 meanwhile im fast enough on a normal bike.",
+      "likes": 2,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Flats, chains & brakes",
+    "count": 9,
+    "share": 0.123,
+    "score": 6.0,
+    "frequency": {
+     "value": 0.75,
+     "share": 0.123,
+     "reason": "9 posts, 12% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.141,
+     "signals": {
+      "repeat": 0,
+      "money": 1,
+      "switching": 0
+     },
+     "signal_posts": 1,
+     "likes": 14,
+     "reposts": 0,
+     "reason": "1 mention $ amounts · 14 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 1.0,
+     "label": "product",
+     "reason": "Tire, chain and brake specs can be chosen for e-bike weight and speed."
+    },
+    "why_opening": "Flats after a week and brakes that can't stop the bike. Puncture-resistant tires and stronger brakes spec'd for e-bikes are fixable.",
+    "evidence": [
+     {
+      "id": "2099623857657192820",
+      "url": "https://x.com/Imaginer_on_DVD/status/2099623857657192820",
+      "username": "Imaginer_on_DVD",
+      "gist": "Rear tire went flat after a week of use",
+      "text": "The rear tire of my e-bike I got from my auntie has mysteriously gone flat after only like a week of use 💔",
+      "likes": 6,
+      "reposts": 0
+     },
+     {
+      "id": "2103223900306076023",
+      "url": "https://x.com/Jacksaltel/status/2103223900306076023",
+      "username": "Jacksaltel",
+      "gist": "Upgrading to hydraulic brakes, 'tired of not being able to stop'",
+      "text": "upgrading my e-bike to hydraulic brakes\n\ntired of not being able to stop",
+      "likes": 0,
+      "reposts": 0
+     }
+    ]
+   },
+   {
+    "theme": "Too heavy to carry or push",
+    "count": 8,
+    "share": 0.11,
+    "score": 4.8,
+    "frequency": {
+     "value": 0.671,
+     "share": 0.11,
+     "reason": "8 posts, 11% of genuine posts"
+    },
+    "intensity": {
+     "value": 0.171,
+     "signals": {
+      "repeat": 0,
+      "money": 0,
+      "switching": 1
+     },
+     "signal_posts": 1,
+     "likes": 17,
+     "reposts": 0,
+     "reason": "1 say never again / switching / returning · 17 likes, 0 reposts"
+    },
+    "fixability": {
+     "value": 0.6,
+     "label": "mixed",
+     "reason": "Motor and battery weight is inherent, though frame design can reduce it."
+    },
+    "why_opening": "Owners consider selling because the bike is too heavy for stairs, trains or pushing home. Lighter models have demand, within physical limits.",
+    "evidence": [
+     {
+      "id": "2113422694209519696",
+      "url": "https://x.com/wrath_776/status/2113422694209519696",
+      "username": "wrath_776",
+      "gist": "Considering selling e-bike for a regular bike because it's so heavy",
+      "text": "Thinking about selling my ebike for to buy a non-electric because its so heavy but also think I might regret that quickly",
+      "likes": 9,
+      "reposts": 0
+     },
+     {
+      "id": "2032609480521953571",
+      "url": "https://x.com/commiefornia99/status/2032609480521953571",
+      "username": "commiefornia99",
+      "gist": "Can't lift heavy e-bike up train stairs; ramp access refused",
+      "text": "@SacWalkSafe @lyft @RideSacRT blue line wouldn’t let me use the ramp to bring my ebike on. I can’t lift it up the back stairs due to an elbow injury, told the conductor but they still refused. But people with shopping carts of junk are always allowed to use the ramps",
+      "likes": 1,
+      "reposts": 0
+     }
+    ]
+   }
+  ]
+ }
 }

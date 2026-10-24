@@ -139,3 +139,13 @@ seed/             real labeled posts for the demo topics
 scripts/          build_seed.py, live_smoke.py, screenshots.py
 screenshots/      headless captures of every screen
 ```
+
+## Opportunities (heuristic score)
+
+Each theme with 3+ posts gets `score = 10 x (0.40 x frequency + 0.35 x intensity + 0.25 x fixability)`:
+
+* **Frequency**: share of genuine posts in the theme, scaled so the biggest theme = 1.0.
+* **Intensity** (deterministic, `backend/app/opportunities.py`): 70% text signals (share of posts with repeat-failure, `$` amount, or switching / "never again" / return language, plus a bonus per signal type found in 20%+ of posts) and 30% likes + reposts. The UI shows which signals fired.
+* **Fixability**: Grok judges product/design (1.0), mixed (0.6), or structural (0.2), with a one-line reason, plus 1–2 sentences of "why this is an opening" and 2 evidence posts. Live runs make this **one extra `GROK_LABEL_MODEL` call** for all themes (validated JSON; falls back to unjudged scores). For the three seed topics these fields were hand-written from the cached posts (`scripts/seed_opportunities.py`).
+
+"Open in Grok" opens `https://grok.com/?q=<prompt>` in a new tab with the top 3 opportunities and also copies the prompt to the clipboard.
