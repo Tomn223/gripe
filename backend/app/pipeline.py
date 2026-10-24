@@ -44,7 +44,7 @@ class StageReporter:
         self.cb = cb or (lambda *_: None)
         self.stages = [{"key": k, "label": l, "status": "pending", "count": None, "detail": ""} for k, l in STAGES]
 
-    def update(self, key, status=None, count=None, detail=None):
+    def update(self, key, status=None, count=None, detail=None, queries=None):
         for s in self.stages:
             if s["key"] == key:
                 if status:
@@ -53,6 +53,8 @@ class StageReporter:
                     s["count"] = count
                 if detail is not None:
                     s["detail"] = detail
+                if queries is not None:
+                    s["queries"] = list(queries)
         self.cb(self.stages)
 
 
@@ -167,7 +169,7 @@ class Pipeline:
 
         rep.update("pull", "running", 0, "searching X")
         raw, src_stats = self.source.fetch(topic, queries, self.s.max_posts,
-                                           progress=lambda n, d: rep.update("pull", count=n, detail=d))
+                                           progress=lambda n, d, q=None: rep.update("pull", count=n, detail=d, queries=q))
         seen, deduped = set(), []
         for p in raw:
             if p["id"] not in seen:

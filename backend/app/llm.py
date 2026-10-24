@@ -43,7 +43,13 @@ class GrokClient:
             timeout=timeout,
             transport=transport,
         )
-        self.usage = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
+        self.usage = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0, "cost_in_usd_ticks": 0}
+
+    def _add_usage(self, u):
+        u = u or {}
+        self.usage["prompt_tokens"] += u.get("prompt_tokens", u.get("input_tokens", 0)) or 0
+        self.usage["completion_tokens"] += u.get("completion_tokens", u.get("output_tokens", 0)) or 0
+        self.usage["cost_in_usd_ticks"] += u.get("cost_in_usd_ticks", 0) or 0
 
     def _post(self, path, payload):
         r = self.http.post(path, json=payload)
@@ -52,9 +58,7 @@ class GrokClient:
             # never include request headers (key) in errors
             raise LLMError(f"xAI {path} HTTP {r.status_code}: {r.text[:300]}")
         data = r.json()
-        u = data.get("usage") or {}
-        self.usage["prompt_tokens"] += u.get("prompt_tokens", u.get("input_tokens", 0)) or 0
-        self.usage["completion_tokens"] += u.get("completion_tokens", u.get("output_tokens", 0)) or 0
+        self._add_usage(data.get("usage"))
         return data
 
     def chat_json(self, model, system, user, temperature=0.2, max_tokens=None):
@@ -78,6 +82,53 @@ class GrokClient:
         if include:
             payload["include"] = include
         return self._post("/responses", payload)
+
+
+    def responses_stream(self, model, prompt, tools, include=None, on_event=None):
+        """Streamed Responses API call (SSE). Calls on_event(event_dict) for every event and returns the final
+        response object from `response.completed`. Raises LLMError if the stream ends without one."""
+        payload = {"model": model, "input": [{"role": "user", "content": prompt}], "tools": tools, "stream": True}
+        if include:
+            payload["include"] = include
+        self.usage["calls"] += 1
+        final = None
+        with self.http.stream("POST", "/responses", json=payload) as r:
+            if r.status_code >= 400:
+                r.read()
+                raise LLMError(f"xAI /responses (stream) HTTP {r.status_code}: {r.text[:300]}")
+            for ev in iter_sse(r.iter_lines()):
+                if ev.get("type") in ("response.completed", "response.done"):
+                    final = ev.get("response")
+                elif ev.get("type") in ("response.failed", "error"):
+                    raise LLMError(f"xAI stream error: {str(ev)[:300]}")
+                if on_event:
+                    try:
+                        on_event(ev)
+                    except Exception:
+                        pass  # progress reporting must never break the call
+        if not isinstance(final, dict):
+            raise LLMError("stream ended without response.completed")
+        self._add_usage(final.get("usage"))
+        return final
+
+
+def iter_sse(lines):
+    """Parse Server-Sent Events lines into JSON dicts (ignores comments, `event:` lines, [DONE], bad JSON)."""
+    for line in lines:
+        if isinstance(line, bytes):
+            line = line.decode("utf-8", "replace")
+        line = line.strip()
+        if not line.startswith("data:"):
+            continue
+        data = line[5:].strip()
+        if not data or data == "[DONE]":
+            continue
+        try:
+            ev = json.loads(data)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(ev, dict):
+            yield ev
 
 
 def response_text_and_citations(resp: dict):

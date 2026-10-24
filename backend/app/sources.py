@@ -6,13 +6,17 @@
 - XApiV2Source: official X API v2 recent search (+ counts) with a bearer token.
 """
 import datetime as dt
+import json
 import re
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import httpx
 
 from .llm import GrokClient, extract_json, response_text_and_citations
 
 STATUS_RE = re.compile(r"(?:x|twitter)\.com/(?:i/(?:web/)?status|([A-Za-z0-9_]{1,15})/status)/(\d+)")
+
+STATUS_DONE_RE = re.compile(STATUS_RE.pattern + r"(?=\D)")  # only complete ids (followed by a non-digit)
 
 COMPLAINT_TERMS = ["broken", "broke", "hate", "wish", "problem", "returned", "worst", "stopped working",
                    "regret", "annoying", "disappointed", "customer service", "warranty", "useless"]
@@ -59,6 +63,56 @@ def parse_status_url(url):
     return m.group(2), m.group(1)
 
 
+class LiveProgress:
+    """Thread-safe live counter for parallel streamed searches: X queries Grok runs + post ids seen so far."""
+
+    def __init__(self, progress, calls):
+        self.cb, self.calls, self.lock = progress, calls, threading.Lock()
+        self.ids, self.queries, self.done, self.final, self.extra = set(), [], 0, None, ""
+
+    def emit(self):
+        if not self.cb:
+            return
+        n = self.final if self.final is not None else len(self.ids)
+        if self.queries and n == 0:
+            d = f"Grok ran {len(self.queries)} X searches and is reading the results"
+        elif self.queries:
+            d = f"Grok ran {len(self.queries)} X searches · {n} posts collected so far"
+        else:
+            d = "Grok is planning its X searches (usually 1-3 min)"
+        if self.calls > 1:
+            d += f" · {self.done}/{self.calls} search batches done"
+        if self.extra:
+            d += f" · {self.extra}"
+        try:
+            self.cb(n, d, self.queries[-3:])
+        except TypeError:  # older 2-arg progress callbacks
+            self.cb(n, d)
+
+    def query(self, q):
+        with self.lock:
+            self.queries.append(q[:160])
+            self.emit()
+
+    def post(self, pid):
+        with self.lock:
+            if pid not in self.ids:
+                self.ids.add(pid)
+                self.emit()
+
+    def note(self, msg):
+        with self.lock:
+            self.extra = msg
+            self.emit()
+
+    def call_done(self, verified_total):
+        with self.lock:
+            self.done += 1
+            if self.done == self.calls:
+                self.final = verified_total
+            self.emit()
+
+
 class XaiXSearchSource:
     name = "xai_x_search"
 
@@ -81,12 +135,43 @@ class XaiXSearchSource:
             "invent posts, URLs, or numbers."
         )
 
-    def _one(self, topic, queries, per_call):
+    def _one(self, topic, queries, per_call, live=None):
         tool = {"type": "x_search",
                 "from_date": (self.today - dt.timedelta(days=self.lookback)).isoformat(),
                 "to_date": (self.today + dt.timedelta(days=1)).isoformat()}
-        resp = self.client.responses(self.model, self._prompt(topic, queries, per_call), [tool],
-                                     include=["no_inline_citations"])
+        prompt = self._prompt(topic, queries, per_call)
+        resp = None
+        if live is not None and hasattr(self.client, "responses_stream"):
+            buf = []
+
+            def on_event(ev):
+                t = ev.get("type", "")
+                if t == "response.custom_tool_call_input.done":
+                    q = ev.get("input")
+                    try:
+                        q = json.loads(q).get("query") or q
+                    except Exception:
+                        pass
+                    if q:
+                        live.query(str(q))
+                elif t == "response.output_text.delta":
+                    buf.append(ev.get("delta") or "")
+                    tail = "".join(buf[-40:])  # status ids appear as Grok writes each post into its JSON
+                    for m in STATUS_DONE_RE.finditer(tail):
+                        live.post(m.group(2))
+                elif t == "response.output_text.annotation.added":
+                    pid, _ = parse_status_url((ev.get("annotation") or {}).get("url", ""))
+                    if pid:
+                        live.post(pid)
+
+            try:
+                resp = self.client.responses_stream(self.model, prompt, [tool], include=["no_inline_citations"],
+                                                    on_event=on_event)
+            except Exception as e:
+                live.note(f"streaming unavailable ({str(e)[:80]}), waiting for the full response")
+                resp = None
+        if resp is None:
+            resp = self.client.responses(self.model, prompt, [tool], include=["no_inline_citations"])
         text, cited = response_text_and_citations(resp)
         cited_ids = {parse_status_url(u)[0] for u in cited} - {None}
         try:
@@ -119,10 +204,10 @@ class XaiXSearchSource:
         groups = [g for g in groups if g]
         per_call = max(15, min(50, max_posts // max(1, len(groups))))
         posts, unverified, errors = [], 0, []
-        if progress:
-            progress(0, f"Grok is searching X (0/{len(groups)} searches done, usually 1-3 min)")
+        live = LiveProgress(progress, len(groups))
+        live.emit()
         with ThreadPoolExecutor(max_workers=len(groups)) as ex:
-            futs = [ex.submit(self._one, topic, g, per_call) for g in groups]
+            futs = [ex.submit(self._one, topic, g, per_call, live) for g in groups]
             done = 0
             for f in as_completed(futs):
                 done += 1
@@ -132,8 +217,7 @@ class XaiXSearchSource:
                     unverified += unv
                 except Exception as e:  # one slow/failed search shouldn't sink the whole run
                     errors.append(str(e)[:200])
-                if progress:
-                    progress(len(posts), f"Grok is searching X ({done}/{len(groups)} searches done)")
+                live.call_done(len(posts))
         if errors and not posts:
             raise RuntimeError("all X searches failed: " + errors[0])
         return posts, {"unverified_dropped": unverified, "search_calls": len(groups), "search_errors": errors}

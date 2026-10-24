@@ -173,3 +173,9 @@ a:hover { text-decoration: underline; }
 .landing-inner { width: min(860px, 100%); }
 .landing-form, .landing-sub { max-width: 760px; }
 @media (min-width: 900px) { .steps { flex-wrap: nowrap; white-space: nowrap; } }
+
+/* Live search feed on the loading screen */
+.live-queries { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-direction: column; gap: 3px; }
+.live-queries li { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; color: #5d6478; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 440px; animation: fadein .3s ease; }
+.live-queries li.latest { color: #8b93a7; }
+.stage-count.ticking { color: var(--accent2); }

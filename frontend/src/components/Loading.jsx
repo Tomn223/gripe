@@ -1,6 +1,16 @@
 import { useEffect, useState } from 'react'
 import Logo from './Logo'
 
+function CountUp({ value }) {
+  const [shown, setShown] = useState(value)
+  useEffect(() => {
+    if (shown === value) return
+    const t = setTimeout(() => setShown((x) => (x < value ? x + Math.max(1, Math.ceil((value - x) / 6)) : value)), 60)
+    return () => clearTimeout(t)
+  }, [shown, value])
+  return <span className={`stage-count${shown !== value ? ' ticking' : ''}`}>{Math.min(shown, value)}</span>
+}
+
 export default function Loading({ topic, stages, onCancel }) {
   const [secs, setSecs] = useState(0)
   useEffect(() => {
@@ -25,9 +35,18 @@ export default function Loading({ topic, stages, onCancel }) {
               <div className="stage-body">
                 <div className="stage-label">
                   {s.label}
-                  {s.count != null && s.status !== 'pending' && <span className="stage-count">{s.count}</span>}
+                  {s.count != null && s.status !== 'pending' && <CountUp value={s.count} />}
                 </div>
                 {s.status !== 'pending' && s.detail && <div className="stage-detail">{s.detail}</div>}
+                {s.status === 'running' && s.queries?.length > 0 && (
+                  <ul className="live-queries">
+                    {s.queries.map((q, i) => (
+                      <li key={`${i}-${q}`} className={i === s.queries.length - 1 ? 'latest' : ''}>
+                        searching: {q}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </li>
           ))}
