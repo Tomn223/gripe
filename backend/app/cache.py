@@ -31,12 +31,12 @@ class Cache:
         p = self.path(topic)
         if not p.exists():
             return None
-        return json.loads(p.read_text())
+        return json.loads(p.read_text(encoding="utf-8"))
 
     def put(self, topic, data):
         p = self.path(topic)
         tmp = p.with_suffix(".tmp")
-        tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1))
+        tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
         tmp.replace(p)
         return p
 
@@ -44,7 +44,7 @@ class Cache:
         out = []
         for p in sorted(self.dir.glob("*.json")):
             try:
-                d = json.loads(p.read_text())
+                d = json.loads(p.read_text(encoding="utf-8"))
                 out.append({"topic": d["topic"], "slug": p.stem, "kept": d["stats"]["kept"],
                             "source": d.get("source"), "generated_at": d.get("generated_at")})
             except Exception:

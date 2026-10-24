@@ -113,7 +113,7 @@ WISHES = {
 def main():
     cache = Cache(ROOT / "backend" / "data" / "cache")
     for f in sorted((ROOT / "seed").glob("*.json")):
-        seed = json.loads(f.read_text())
+        seed = json.loads(f.read_text(encoding="utf-8"))
         topic, meta = seed["topic"], META[seed["topic"]]
         posts = []
         for p in seed["posts"]:

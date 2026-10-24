@@ -76,7 +76,7 @@ def _by_slug(slug):
     p = cache.dir / f"{slug}.json"
     if p.exists():
         import json
-        return json.loads(p.read_text())
+        return json.loads(p.read_text(encoding="utf-8"))
     return None
 
 
