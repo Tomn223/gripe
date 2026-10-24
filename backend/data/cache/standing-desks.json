@@ -1,0 +1,1295 @@
+{
+ "schema_version": 1,
+ "topic": "standing desks",
+ "generated_at": "2026-10-24T19:30:00+00:00",
+ "source": "seed:x-api-search+manual-labels",
+ "model": {
+  "label": "manual (seed)"
+ },
+ "queries": [],
+ "stats": {
+  "raw": 289,
+  "deduped": 263,
+  "noise_dropped": 199,
+  "search_calls": 13,
+  "noise_reasons": {
+   "ads, deals, brand/repair promos, jokes, off-topic (manual review)": 199
+  },
+  "kept": 64
+ },
+ "summary": {
+  "headline": "Top frustrations with standing desks: owners stop standing at them, standing all day hurts their feet and legs, and motors or legs fail and get the desk stuck.",
+  "text": "Of 64 genuine posts (from 263 pulled), the two biggest themes are behavioral, not hardware: 15 owners say the desk became 'an expensive shelf' and 15 describe foot, leg or back pain from standing. Another 12 report desks stuck up or down or a leg motor dying, and wobble with monitors and walking pads keeps coming up, so a new entrant could compete on reliability plus built-in habit nudges."
+ },
+ "categories": [
+  {
+   "name": "Bought it, never stand at it",
+   "count": 15,
+   "share": 0.234,
+   "description": "Desk becomes a shelf; owners forget or never switch to standing",
+   "sentiment": {
+    "negative": 13,
+    "neutral": 2,
+    "positive": 0
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Has a standing desk, never stands, still complains about back pain",
+    "Never uses it; would rather move than stand still, wants a walking pad",
+    "Converter used for 22 minutes, now an expensive shelf for a plant"
+   ]
+  },
+  {
+   "name": "Foot, leg & back pain from standing",
+   "count": 15,
+   "share": 0.234,
+   "description": "Sore feet, plantar fasciitis, knee and back pain after standing too long",
+   "sentiment": {
+    "negative": 9,
+    "neutral": 5,
+    "positive": 1
+   },
+   "top_brands": [],
+   "example_gists": [
+    "A year of standing-desk use led to plantar fasciitis that won't go away",
+    "Feet hurt instead of back now: 'just moving the problem around'",
+    "Wearing running shoes to work because feet hurt at the standing desk"
+   ]
+  },
+  {
+   "name": "Motor & electronics failures",
+   "count": 12,
+   "share": 0.188,
+   "description": "Desks stuck up or down, one leg failing, dead motors and control boxes",
+   "sentiment": {
+    "negative": 10,
+    "neutral": 2,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "FlexiSpot",
+     "count": 2
+    },
+    {
+     "name": "Wayfair",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "$1,000 Wayfair desk stuck upright for 3 weeks; seller would only refund, not fix",
+    "Motor broke within months; warranty hard to track down; now uses a manual riser on top",
+    "Desk broke: only one leg goes up"
+   ]
+  },
+  {
+   "name": "Assembly & delivery damage",
+   "count": 6,
+   "share": 0.094,
+   "description": "Day-long assembly, mistakes, cracked or damaged tops on arrival",
+   "sentiment": {
+    "negative": 5,
+    "neutral": 1,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "UPLIFT",
+     "count": 1
+    },
+    {
+     "name": "Greensoul",
+     "count": 1
+    },
+    {
+     "name": "Wayfair",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "Took a whole day to assemble the standing desk",
+    "Unboxed UPLIFT desk: rubberwood top arrived cracked",
+    "Greensoul desk via Flipkart arrived with packing melted onto it"
+   ]
+  },
+  {
+   "name": "Wobble & stability",
+   "count": 5,
+   "share": 0.078,
+   "description": "Monitors shaking at standing height, worse with walking pads",
+   "sentiment": {
+    "negative": 3,
+    "neutral": 1,
+    "positive": 1
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Every review says monitors wobble, even on $1k+ desks; walking pad makes it worse",
+    "Desk shakes too much to use with a walking pad",
+    "Wobble was 'my worst enemy' until building custom CNC monitor arms"
+   ]
+  },
+  {
+   "name": "Size, looks & design",
+   "count": 4,
+   "share": 0.062,
+   "description": "Desks that don't fit the room or look like plain tables; awkward control bars",
+   "sentiment": {
+    "negative": 2,
+    "neutral": 2,
+    "positive": 0
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Won't switch: standing desks are 'basically just tables' with no drawers",
+    "Partner vetoed the standing desk because it 'didn't fit the vibe'",
+    "Buy a frame with the electronics bar at the back so it doesn't hit your knees"
+   ]
+  },
+  {
+   "name": "Warranty & support",
+   "count": 3,
+   "share": 0.047,
+   "description": "Months-long waits for replacement parts, unresponsive support",
+   "sentiment": {
+    "negative": 2,
+    "neutral": 1,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "Autonomous",
+     "count": 1
+    },
+    {
+     "name": "ARTIKEL",
+     "count": 1
+    },
+    {
+     "name": "Progressive Desk",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "₹30,000 desk arrived damaged; support gave conflicting compensation promises",
+    "Waited 5+ months for a warranty replacement leg, delayed a 4th time",
+    "Months waiting on support tickets with no response"
+   ]
+  },
+  {
+   "name": "Cables & setup",
+   "count": 2,
+   "share": 0.031,
+   "description": "Cables pulled or things falling when the desk moves",
+   "sentiment": {
+    "negative": 1,
+    "neutral": 1,
+    "positive": 0
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Never raised it because it would rip the cables out of the PC",
+    "Needs cable management or stuff falls when raising"
+   ]
+  },
+  {
+   "name": "Price & value",
+   "count": 1,
+   "share": 0.016,
+   "description": "Overpriced tops and frames",
+   "sentiment": {
+    "negative": 1,
+    "neutral": 0,
+    "positive": 0
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Off-the-shelf Formica tops are overpriced; DIY legs + own top is better"
+   ]
+  },
+  {
+   "name": "other",
+   "count": 1,
+   "share": 0.016,
+   "description": "Other standing desk complaints",
+   "sentiment": {
+    "negative": 0,
+    "neutral": 1,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "IKEA",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "IKEA stopped selling the stable motorized IDÅSEN"
+   ]
+  }
+ ],
+ "sentiment": {
+  "negative": 46,
+  "neutral": 16,
+  "positive": 2
+ },
+ "brands": [
+  {
+   "name": "Wayfair",
+   "count": 2
+  },
+  {
+   "name": "FlexiSpot",
+   "count": 2
+  },
+  {
+   "name": "UPLIFT",
+   "count": 1
+  },
+  {
+   "name": "Greensoul",
+   "count": 1
+  },
+  {
+   "name": "Autonomous",
+   "count": 1
+  },
+  {
+   "name": "ARTIKEL",
+   "count": 1
+  },
+  {
+   "name": "Progressive Desk",
+   "count": 1
+  },
+  {
+   "name": "IKEA",
+   "count": 1
+  }
+ ],
+ "volume": {
+  "query": "\"standing desk\" -is:retweet lang:en",
+  "granularity": "day",
+  "label": "All posts mentioning the topic, last 7 days",
+  "series": [
+   {
+    "date": "2026-10-17",
+    "count": 8
+   },
+   {
+    "date": "2026-10-18",
+    "count": 26
+   },
+   {
+    "date": "2026-10-19",
+    "count": 49
+   },
+   {
+    "date": "2026-10-20",
+    "count": 59
+   },
+   {
+    "date": "2026-10-21",
+    "count": 59
+   },
+   {
+    "date": "2026-10-22",
+    "count": 63
+   },
+   {
+    "date": "2026-10-23",
+    "count": 73
+   },
+   {
+    "date": "2026-10-24",
+    "count": 51
+   }
+  ]
+ },
+ "dig_suggestions": [
+  {
+   "label": "Why do people stop standing?",
+   "kind": "filter_category",
+   "category": "Bought it, never stand at it"
+  },
+  {
+   "label": "Filter to motor & electronics failures",
+   "kind": "filter_category",
+   "category": "Motor & electronics failures"
+  },
+  {
+   "label": "Which brands come up most in hardware failures?",
+   "kind": "brands",
+   "category": "Motor & electronics failures"
+  },
+  {
+   "label": "What do people wish existed?",
+   "kind": "wishes"
+  }
+ ],
+ "notes": [
+  "Seed data: real X posts, labeled by hand; brand counts reflect search terms, not market share."
+ ],
+ "posts": [
+  {
+   "id": "2113862823235489828",
+   "url": "https://x.com/shouldveknown11/status/2113862823235489828",
+   "username": "shouldveknown11",
+   "created_at": "2026-10-24T05:19:05.000Z",
+   "text": "I used a standing desk for a year and then developed plantar fasciitis as a result. It is beyond frustrating as I love to walk. It has been 3 months and the pain doesnt go away. Any tips?",
+   "likes": 31,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "A year of standing-desk use led to plantar fasciitis that won't go away",
+   "wish": "",
+   "representativeness": 0.823
+  },
+  {
+   "id": "2036854834570096694",
+   "url": "https://x.com/PatCarino/status/2036854834570096694",
+   "username": "PatCarino",
+   "created_at": "2026-03-25T17:16:50.000Z",
+   "text": "I bought $1000 standing desk from Wayfair on sale for $500 for my home office and the thing has been stuck in the upright position for 3 weeks. \n\nTried to fix or replace it but they insisted on a full refund instead. \n\nNow I have a pile of garbage in my basement and my feet hurt.",
+   "likes": 16,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "Wayfair",
+   "gist": "$1,000 Wayfair desk stuck upright for 3 weeks; seller would only refund, not fix",
+   "wish": "",
+   "representativeness": 0.797
+  },
+  {
+   "id": "2044448991954207069",
+   "url": "https://x.com/gns840839/status/2044448991954207069",
+   "username": "gns840839",
+   "created_at": "2026-04-15T16:13:18.000Z",
+   "text": "@it_unprofession I bought a fancy standing desk. It took a while to assemble. The motor broke within a few months, warranty is hard to track down. Spent hours troubleshooting it. So I now have a small manual elevation platform on top of my broken \"standing\" desk. The struggle is real.",
+   "likes": 12,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Motor broke within months; warranty hard to track down; now uses a manual riser on top",
+   "wish": "",
+   "representativeness": 0.787
+  },
+  {
+   "id": "2112780076869877902",
+   "url": "https://x.com/MattBlagg/status/2112780076869877902",
+   "username": "MattBlagg",
+   "created_at": "2026-10-21T05:36:38.000Z",
+   "text": "Does anyone know a standing desk that doesn’t cause your monitors to wobble? Every review I read says it causes that even the expensive 1k+ ones. Will be pairing it with a walking pad which will just exacerbate the issue.",
+   "likes": 6,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Wobble & stability",
+   "brand": "none",
+   "gist": "Every review says monitors wobble, even on $1k+ desks; walking pad makes it worse",
+   "wish": "A desk that keeps monitors still, even with a walking pad",
+   "representativeness": 0.762
+  },
+  {
+   "id": "2102125762656494048",
+   "url": "https://x.com/Nikitatandoori/status/2102125762656494048",
+   "username": "Nikitatandoori",
+   "created_at": "2026-09-21T20:00:12.000Z",
+   "text": "i have a standing desk\n\nNo i never use it to stand \n\nyet i complain about why my back hurts when im in one position for a zillion hours",
+   "likes": 4,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Has a standing desk, never stands, still complains about back pain",
+   "wish": "",
+   "representativeness": 0.749
+  },
+  {
+   "id": "2108559123206037890",
+   "url": "https://x.com/thrtysvnth/status/2108559123206037890",
+   "username": "thrtysvnth",
+   "created_at": "2026-10-09T14:04:04.000Z",
+   "text": "invested in a standing desk, took a whole day to assemble it, then had to stand and watch a P6 kms",
+   "likes": 544,
+   "reposts": 13,
+   "sentiment": "negative",
+   "category": "Assembly & delivery damage",
+   "brand": "none",
+   "gist": "Took a whole day to assemble the standing desk",
+   "wish": "",
+   "representativeness": 0.74
+  },
+  {
+   "id": "2039633539931443301",
+   "url": "https://x.com/byjoni_/status/2039633539931443301",
+   "username": "byjoni_",
+   "created_at": "2026-04-02T09:18:25.000Z",
+   "text": "@AlexOakley_Edit I fell in love with standing desk.\n\nAnd then it broke on me. Only one leg goes up.",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Desk broke: only one leg goes up",
+   "wish": "",
+   "representativeness": 0.729
+  },
+  {
+   "id": "2089739225759416719",
+   "url": "https://x.com/OldWandererVT/status/2089739225759416719",
+   "username": "OldWandererVT",
+   "created_at": "2026-08-18T15:40:31.000Z",
+   "text": "Who has Standing Desk thoughts?\nFlexispot? Secretlabs? IKEA? Someone else?\nMust be big..like 70”\n\nI’ve got a Flexispot E7 Pro, and it’s decent.  Already had to replace one leg though, and that was in the first few months.. replacement leg is now making odd noises randomly.",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "FlexiSpot",
+   "gist": "FlexiSpot E7 Pro leg replaced in first months; replacement leg now makes odd noises",
+   "wish": "",
+   "representativeness": 0.729
+  },
+  {
+   "id": "2035767020721930312",
+   "url": "https://x.com/brrrittnee/status/2035767020721930312",
+   "username": "brrrittnee",
+   "created_at": "2026-03-22T17:14:15.000Z",
+   "text": "@AshleyDCan I have a standing desk but never use it. I think bc I want to move instead of standing there. What walking pad do you recommend? \n\nI usually sit for work all day then spend the hours after work standing intentionally and then go do the treadmill at the gym for an hour and a half.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Never uses it; would rather move than stand still, wants a walking pad",
+   "wish": "A setup that lets them move instead of standing still",
+   "representativeness": 0.713
+  },
+  {
+   "id": "2108643304782864527",
+   "url": "https://x.com/Faelor/status/2108643304782864527",
+   "username": "Faelor",
+   "created_at": "2026-10-09T19:38:35.000Z",
+   "text": "I bought a standing desk from @UPLIFTDesk years ago, but never set it up. Began unboxing recently. Assembled the legs; easy. Unpacked the rubberwood desktop and... it's cracked! Ugh. Noo!\n\nFrom what I read, the warranty should cover it.\n2026 has been one thing after another. 😩 https://t.co/uY8jVmrI7Y",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Assembly & delivery damage",
+   "brand": "UPLIFT",
+   "gist": "Unboxed UPLIFT desk: rubberwood top arrived cracked",
+   "wish": "",
+   "representativeness": 0.713
+  },
+  {
+   "id": "2111142953196601495",
+   "url": "https://x.com/Karthikyk0e/status/2111142953196601495",
+   "username": "Karthikyk0e",
+   "created_at": "2026-10-16T17:11:17.000Z",
+   "text": "@amazonIN @AmazonHelp My ₹30,000 ARTIKEL standing desk arrived damaged. Despite photos, support agents gave conflicting compensation promises. Management offered only a return, even though it’s fully assembled. Please review and offer a fair resolution.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Warranty & support",
+   "brand": "ARTIKEL",
+   "gist": "₹30,000 desk arrived damaged; support gave conflicting compensation promises",
+   "wish": "",
+   "representativeness": 0.713
+  },
+  {
+   "id": "2082608733851463791",
+   "url": "https://x.com/nivyp5/status/2082608733851463791",
+   "username": "nivyp5",
+   "created_at": "2026-07-29T23:26:29.000Z",
+   "text": "@FlexiSpotUK help! Standing desk frozen in standing position - no power to processor unit, bought new power unit - same problem. Reset procedure = no impact. Please advise!",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "FlexiSpot",
+   "gist": "FlexiSpot frozen in standing position; new power unit and reset didn't help",
+   "wish": "",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2093411857273139621",
+   "url": "https://x.com/basedlantz/status/2093411857273139621",
+   "username": "basedlantz",
+   "created_at": "2026-08-28T18:54:15.000Z",
+   "text": "@anotherrmare I bought a walking pad and a standing desk, but the desk shakes too much to use while walking, so unless you buy a super stable standing desk, or can study without touching the desk, I think outside is best.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Wobble & stability",
+   "brand": "none",
+   "gist": "Desk shakes too much to use with a walking pad",
+   "wish": "A desk stable enough to use while walking",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2109490743521992776",
+   "url": "https://x.com/onchainnotes_/status/2109490743521992776",
+   "username": "onchainnotes_",
+   "created_at": "2026-10-12T03:46:00.000Z",
+   "text": "standing desk converter arrived friday. stood for 22 minutes this morning, sat back down, and now it's a very expensive shelf for my pothos",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Converter used for 22 minutes, now an expensive shelf for a plant",
+   "wish": "",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2090085807982051503",
+   "url": "https://x.com/PecereBattista/status/2090085807982051503",
+   "username": "PecereBattista",
+   "created_at": "2026-08-19T14:37:43.000Z",
+   "text": "started using a standing desk and now my feet hurt instead of my back so I guess we're just moving the problem around",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Feet hurt instead of back now: 'just moving the problem around'",
+   "wish": "",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2108189547591008726",
+   "url": "https://x.com/Anugrah07570540/status/2108189547591008726",
+   "username": "Anugrah07570540",
+   "created_at": "2026-10-08T13:35:31.000Z",
+   "text": "@GyanTherapy I ordered a standing desk - Greensoul imperium neo from Flipkart on offer. Delivered today. Plastic and thermocol packing melted onto the desk and stand.\n@Flipkart @flipkartsupport what's the point of offers if you get a damaged product?",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Assembly & delivery damage",
+   "brand": "Greensoul",
+   "gist": "Greensoul desk via Flipkart arrived with packing melted onto it",
+   "wish": "",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2049008937211445265",
+   "url": "https://x.com/_keegster/status/2049008937211445265",
+   "username": "_keegster",
+   "created_at": "2026-04-28T06:12:54.000Z",
+   "text": "Hey if you ever want to get a standing desk with a really nice warranty on said desk and wait over 5 months to be informed that the replacement leg is delayed for the 4th time for another 2 months, go with @autonomous_labs !",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Warranty & support",
+   "brand": "Autonomous",
+   "gist": "Waited 5+ months for a warranty replacement leg, delayed a 4th time",
+   "wish": "Replacement parts without 5-month waits",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2101497572305059842",
+   "url": "https://x.com/songblingbling/status/2101497572305059842",
+   "username": "songblingbling",
+   "created_at": "2026-09-20T02:23:59.000Z",
+   "text": "I LOVE my desk cause it’s beautiful to look at but if I keep sitting all day my lower back won’t make it past 30… I don’t want to buy a standing desk because mine is beautiful and it fits my router and it has drawers but standing ones are basically just tables…",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Size, looks & design",
+   "brand": "none",
+   "gist": "Won't switch: standing desks are 'basically just tables' with no drawers",
+   "wish": "A standing desk with drawers that looks like a real desk",
+   "representativeness": 0.685
+  },
+  {
+   "id": "2069789840502030537",
+   "url": "https://x.com/ihatethiskid/status/2069789840502030537",
+   "username": "ihatethiskid",
+   "created_at": "2026-06-24T14:28:47.000Z",
+   "text": "Wearing my running shoes to work because my feet hurt at my standing desk",
+   "likes": 28,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Wearing running shoes to work because feet hurt at the standing desk",
+   "wish": "",
+   "representativeness": 0.624
+  },
+  {
+   "id": "2114032562356343204",
+   "url": "https://x.com/ryanvogel/status/2114032562356343204",
+   "username": "ryanvogel",
+   "created_at": "2026-10-24T16:33:34.000Z",
+   "text": "standing desk wobble used to be my worst enemy, until I invested in some CNC gliding arms\n\nthis is what I built https://t.co/aCBGofTveg https://t.co/7yM6v5FIPT",
+   "likes": 27,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Wobble & stability",
+   "brand": "none",
+   "gist": "Wobble was 'my worst enemy' until building custom CNC monitor arms",
+   "wish": "",
+   "representativeness": 0.622
+  },
+  {
+   "id": "2104329269010980970",
+   "url": "https://x.com/OldWandererVT/status/2104329269010980970",
+   "username": "OldWandererVT",
+   "created_at": "2026-09-27T21:56:08.000Z",
+   "text": "I have a love/hate relationship with my standing desk.  I’ve spent the last four hours or so taking everything off my desk, replacing a leg, and starting to put everything back on my desk..\n\nSo today is a hate day.. lol",
+   "likes": 3,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Spent four hours clearing the desk to replace a leg: 'today is a hate day'",
+   "wish": "",
+   "representativeness": 0.545
+  },
+  {
+   "id": "2102770141352087966",
+   "url": "https://x.com/Zelda_thfc/status/2102770141352087966",
+   "username": "Zelda_thfc",
+   "created_at": "2026-09-23T14:40:43.000Z",
+   "text": "@SpursGrumpy My standing desk which is now stuck in standing until I get a replacement 😂😭",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Desk stuck in standing mode until a replacement arrives",
+   "wish": "",
+   "representativeness": 0.534
+  },
+  {
+   "id": "2102473807655059594",
+   "url": "https://x.com/GeorfeIsHere/status/2102473807655059594",
+   "username": "GeorfeIsHere",
+   "created_at": "2026-09-22T19:03:12.000Z",
+   "text": "Tell me why i bought this adjustable standing desk specifically to help with my back pain from hunching over to reach things all the time and i keep forgetting i can adjust it\n\nActually suffering for no reason",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Bought it for back pain but keeps forgetting to adjust it",
+   "wish": "A nudge to actually raise the desk",
+   "representativeness": 0.534
+  },
+  {
+   "id": "2112564035661287540",
+   "url": "https://x.com/leilei739821175/status/2112564035661287540",
+   "username": "leilei739821175",
+   "created_at": "2026-10-20T15:18:10.000Z",
+   "text": "Reports say Amazon has billions of dollars in Nvidia chips sitting in warehouses because there isn't enough power to plug them all in.\n\nFinally, something big tech and I have in common. I also own expensive hardware I don't use. Mine is a standing desk I've stood at twice.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Owns a standing desk they've stood at twice",
+   "wish": "",
+   "representativeness": 0.518
+  },
+  {
+   "id": "2069912506102079936",
+   "url": "https://x.com/pandabearlily/status/2069912506102079936",
+   "username": "pandabearlily",
+   "created_at": "2026-06-24T22:36:13.000Z",
+   "text": "I've been using my standing desk in stand mode almost all day today and holy fuck my feet hurt",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Standing mode almost all day: feet hurt badly",
+   "wish": "",
+   "representativeness": 0.518
+  },
+  {
+   "id": "2085640458655367232",
+   "url": "https://x.com/yuvlero/status/2085640458655367232",
+   "username": "yuvlero",
+   "created_at": "2026-08-07T08:13:29.000Z",
+   "text": "My legs hurt for 2 days after that (especially the knees). I’m not convinced a standing desk is a good solution. Doubt we’re designed to stand or sit for prolonged periods. https://t.co/ov3vvyR97j",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Legs and knees hurt for 2 days; not convinced standing desks are the answer",
+   "wish": "",
+   "representativeness": 0.518
+  },
+  {
+   "id": "2082213018939932791",
+   "url": "https://x.com/TarnishedMelo/status/2082213018939932791",
+   "username": "TarnishedMelo",
+   "created_at": "2026-07-28T21:14:04.000Z",
+   "text": "@SaraDeekaVT Go for it, i myself cannot get into standing desk since i do most of my work sitting and when i tryna stand for more than an hour without moving somewhere or sitting down my lower side of the back hurts and makes me feel crippled",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Standing over an hour without moving makes lower back hurt",
+   "wish": "",
+   "representativeness": 0.518
+  },
+  {
+   "id": "2095727634843943409",
+   "url": "https://x.com/monroeandco/status/2095727634843943409",
+   "username": "monroeandco",
+   "created_at": "2026-09-04T04:16:19.000Z",
+   "text": "@elliottrichmond PS if you’re handy, you can make a better quality standing desk by buying the legs/motor and adding your own wood top. I used walnut plywood project panel (they come in 2x4ft) and iron-on edge banding! Then a stain/poly coat. Very easy and way nicer than overpriced Formica ones",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Price & value",
+   "brand": "none",
+   "gist": "Off-the-shelf Formica tops are overpriced; DIY legs + own top is better",
+   "wish": "",
+   "representativeness": 0.518
+  },
+  {
+   "id": "2107695149124030495",
+   "url": "https://x.com/Rasterdeck25086/status/2107695149124030495",
+   "username": "Rasterdeck25086",
+   "created_at": "2026-10-07T04:50:57.000Z",
+   "text": "@Cjayson4444 My desk will do the standing desk but I haven't used it at all, had it for maybe 5 years. I've thought about it though because it would definitely rip all the cables out of my PC and sometimes that seems like it would be awesome.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Cables & setup",
+   "brand": "none",
+   "gist": "Never raised it because it would rip the cables out of the PC",
+   "wish": "Cable management that moves with the desk",
+   "representativeness": 0.518
+  },
+  {
+   "id": "2037553684201062526",
+   "url": "https://x.com/Pandoppa/status/2037553684201062526",
+   "username": "Pandoppa",
+   "created_at": "2026-03-27T15:33:48.000Z",
+   "text": "Things that have broken on me today:\n- Computer program (had to system restart)\n- Keyboard (battery died)\n- Standing desk (motor went out)\n- Carpet (loose sectional that won't go back in place)\nI just started my work week and I already need my weekend back 🫠",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Standing desk motor went out",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2054202183793402275",
+   "url": "https://x.com/KillaKam/status/2054202183793402275",
+   "username": "KillaKam",
+   "created_at": "2026-05-12T14:09:00.000Z",
+   "text": "@BarackObama my friend Kevin here at work (@jordansfurn)  has a malfunctioning standing desk that won’t go up or down. Seems like an electric issue, but unclear. He can’t work in these conditions. Please fix this.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Coworker's desk won't go up or down, seems electrical",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2079758819937144875",
+   "url": "https://x.com/WhispersByAhmed/status/2079758819937144875",
+   "username": "WhispersByAhmed",
+   "created_at": "2026-07-22T02:41:57.000Z",
+   "text": "Bought a standing desk with big plans to be healthier. Currently using it as an expensive shelf for my laptop stand and a plant.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Bought to be healthier; now an expensive shelf",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2044119777132552215",
+   "url": "https://x.com/_guilleee/status/2044119777132552215",
+   "username": "_guilleee",
+   "created_at": "2026-04-14T18:25:07.000Z",
+   "text": "I begged for a standing desk at work and now I got it and never use it",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Begged for a standing desk at work, never uses it",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2103226345358565447",
+   "url": "https://x.com/frmdomi/status/2103226345358565447",
+   "username": "frmdomi",
+   "created_at": "2026-09-24T20:53:31.000Z",
+   "text": "@giutheginger I have a standing desk for years and i never used it to stand 😭",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Had a standing desk for years, never used it to stand",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2112382065132077432",
+   "url": "https://x.com/Cyberlane/status/2112382065132077432",
+   "username": "Cyberlane",
+   "created_at": "2026-10-20T03:15:05.000Z",
+   "text": "@StevBuilds I did standing desk with a treadmill for around 7 years. After I injured my back, I stopped using the standing desk and the treadmill and now just have a good ergonomic chair and take regular walks each day. \n\nYMMV",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Stopped using standing desk + treadmill after a back injury",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2093548889983131897",
+   "url": "https://x.com/RealStevenJBass/status/2093548889983131897",
+   "username": "RealStevenJBass",
+   "created_at": "2026-08-29T03:58:46.000Z",
+   "text": "I have temporarily paused my efforts to put together this Wayfair standing desk.\n\nI have the top joined and the base/legs put together. What's stopped me is which way to orient the first on the latter to allow for the motor. I don't really want a motor, but it has one\n\n#furniture",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Assembly & delivery damage",
+   "brand": "Wayfair",
+   "gist": "Paused Wayfair desk assembly, confused about motor orientation",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2095965109810077875",
+   "url": "https://x.com/benaiah_al/status/2095965109810077875",
+   "username": "benaiah_al",
+   "created_at": "2026-09-04T19:59:57.000Z",
+   "text": "@akinkunmi @codebreak_er the last time i assembled my standing desk myself, one leg was automatic the other was manual 😂 (apparently i made a mistake while assembling the motor)",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Assembly & delivery damage",
+   "brand": "none",
+   "gist": "Assembly mistake left one leg motorized and the other manual",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2054913557095916006",
+   "url": "https://x.com/slapthatpass1/status/2054913557095916006",
+   "username": "slapthatpass1",
+   "created_at": "2026-05-14T13:15:45.000Z",
+   "text": "Moved in with my girl a few weeks ago. She was dead set on having her desk and chair in the place and not my standing desk / chair because it “didn’t fit the vibe”. Yeah turns out my back hurts from not having a stand desk option, and tailbone feels numb after 10 min of sitting.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Size, looks & design",
+   "brand": "none",
+   "gist": "Partner vetoed the standing desk because it 'didn't fit the vibe'",
+   "wish": "A standing desk that fits the home's look",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2108822788916334760",
+   "url": "https://x.com/Spanish_Techno/status/2108822788916334760",
+   "username": "Spanish_Techno",
+   "created_at": "2026-10-10T07:31:47.000Z",
+   "text": "Not the full shelf, but I have this and a stack of New Yorkers in the werkroom. I hate Infinite Jest, but it’s a good book to prop my laptop on if the standing desk decides not to cooperate. https://t.co/2vy71WC5i5 https://t.co/HLPkzyukmo",
+   "likes": 55,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Props laptop on a book when the desk 'decides not to cooperate'",
+   "wish": "",
+   "representativeness": 0.487
+  },
+  {
+   "id": "2068908302939897963",
+   "url": "https://x.com/CociyoVT/status/2068908302939897963",
+   "username": "CociyoVT",
+   "created_at": "2026-06-22T04:05:52.000Z",
+   "text": "Til\nA standing desk can be easily reset by holding the up/down button for 15 seconds\n\n\"Free standing desk someone prob threw out thinking it broke\" hack achieved ✅️",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Hold-button reset revives desks people throw out thinking they're broken",
+   "wish": "",
+   "representativeness": 0.434
+  },
+  {
+   "id": "2106082485079523463",
+   "url": "https://x.com/MattieTK/status/2106082485079523463",
+   "username": "MattieTK",
+   "created_at": "2026-10-02T18:02:48.000Z",
+   "text": "@leostera Make your own from an IKEA kitchen counter top screwed into any generic standing desk frame and save £££. Strong recommend to find a standing desk frame with the electronics bar towards the back so it doesn't hit your knees.",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Size, looks & design",
+   "brand": "none",
+   "gist": "Buy a frame with the electronics bar at the back so it doesn't hit your knees",
+   "wish": "Controls placed so they don't hit your knees",
+   "representativeness": 0.434
+  },
+  {
+   "id": "2102793767937794413",
+   "url": "https://x.com/Moondog_94/status/2102793767937794413",
+   "username": "Moondog_94",
+   "created_at": "2026-09-23T16:14:36.000Z",
+   "text": "@takanashikiara I sure y'all did a standup job at building it.\n\nI definitely recommend a cable management holder and zipties. My standing desk needs it so stuff does fall when raising it. Also a standing mat too so feet don't get tired.",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Cables & setup",
+   "brand": "none",
+   "gist": "Needs cable management or stuff falls when raising",
+   "wish": "",
+   "representativeness": 0.434
+  },
+  {
+   "id": "2095726637887201697",
+   "url": "https://x.com/monroeandco/status/2095726637887201697",
+   "username": "monroeandco",
+   "created_at": "2026-09-04T04:12:21.000Z",
+   "text": "@elliottrichmond Standing will also start to hurt your hips and other joints. The key is mixing it up! I alternate between Herman Miller chair, standing, and a Varier kneeling chair. Also tried a leaning wobble stool with the standing desk which provides some nice stretches and core work 😅",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Standing too long hurts hips and joints; mix positions",
+   "wish": "",
+   "representativeness": 0.418
+  },
+  {
+   "id": "2100157302636490803",
+   "url": "https://x.com/sleeping2101/status/2100157302636490803",
+   "username": "sleeping2101",
+   "created_at": "2026-09-16T09:38:14.000Z",
+   "text": "@NalaBrooksxxx If you’re already having back pain, I don’t recommend a standing desk setup without a great ergonomic pad to stand on",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "With back pain, don't stand without a great ergonomic pad",
+   "wish": "",
+   "representativeness": 0.418
+  },
+  {
+   "id": "2102805978718621908",
+   "url": "https://x.com/Kakaocat8/status/2102805978718621908",
+   "username": "Kakaocat8",
+   "created_at": "2026-09-23T17:03:08.000Z",
+   "text": "@takanashikiara I would also recommend an anti-fatigue mat for your feet! It's changed how I use my standing desk for the better. My feet, legs, hips and back all feel better since I added the mat. Something kinda like this (Though mine is quite simpler, flatter but still very much effective): https://t.co/YsJb01rpla",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Anti-fatigue mat fixed sore feet, legs, hips, back at the standing desk",
+   "wish": "Built-in comfort for feet when standing",
+   "representativeness": 0.418
+  },
+  {
+   "id": "2113623807244013868",
+   "url": "https://x.com/vkrollup/status/2113623807244013868",
+   "username": "vkrollup",
+   "created_at": "2026-10-23T13:29:19.000Z",
+   "text": "@hispanicnomad a portable standing desk is not really a thing. it’s never going to be tall enough and portable enough to work \n\nbut what this does is it makes a lot of surfaces that previously wouldn’t have been tall enough work as a makeshift standing desk \n\nso let’s say you have a kitchen",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Size, looks & design",
+   "brand": "none",
+   "gist": "Portable standing desks never get tall or portable enough",
+   "wish": "A portable standing desk that actually gets tall enough",
+   "representativeness": 0.418
+  },
+  {
+   "id": "2085257072996970986",
+   "url": "https://x.com/James_Gets_It/status/2085257072996970986",
+   "username": "James_Gets_It",
+   "created_at": "2026-08-06T06:50:03.000Z",
+   "text": "First day using a standing desk...\n\nMy feet hurt.",
+   "likes": 4,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "First day using a standing desk: feet hurt",
+   "wish": "",
+   "representativeness": 0.391
+  },
+  {
+   "id": "2065306033862619545",
+   "url": "https://x.com/ku1deep/status/2065306033862619545",
+   "username": "ku1deep",
+   "created_at": "2026-06-12T05:31:44.000Z",
+   "text": "Who wants to see a review of the Frido new standing desk against the IKEA IDÅSEN standing desk? Which version though? The 120x60cm or 150x70mm? \n\ncontext : IKEA stopped selling the motorized IDÅSEN and I need a second standing desk. The IDÅSEN is one of the most stable and https://t.co/IEx00dddyT",
+   "likes": 60,
+   "reposts": 1,
+   "sentiment": "neutral",
+   "category": "other",
+   "brand": "IKEA",
+   "gist": "IKEA stopped selling the stable motorized IDÅSEN",
+   "wish": "",
+   "representativeness": 0.391
+  },
+  {
+   "id": "2099968877329535305",
+   "url": "https://x.com/randallphoto/status/2099968877329535305",
+   "username": "randallphoto",
+   "created_at": "2026-09-15T21:09:30.000Z",
+   "text": "@NalaBrooksxxx Definitely a good chair for me. I have a sit/stand desk but almost never use it standing lol. Having good posture in the chair is also really important. As is having your feet flat on the floor and the monitor at a good height.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Sit/stand desk almost never used standing; a good chair matters more",
+   "wish": "",
+   "representativeness": 0.39
+  },
+  {
+   "id": "2029602485216899442",
+   "url": "https://x.com/fvillota/status/2029602485216899442",
+   "username": "fvillota",
+   "created_at": "2026-03-05T16:58:35.000Z",
+   "text": "@ProgressiveDesk I have been waiting for months for customer service to help me with an issue I have with a Vertical Monitor Stand. I open a ticket, emailed and no response. How can I get support? I am very happy with my standing desk, but would love to get support with this.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Warranty & support",
+   "brand": "Progressive Desk",
+   "gist": "Months waiting on support tickets with no response",
+   "wish": "",
+   "representativeness": 0.39
+  },
+  {
+   "id": "2049953593231568949",
+   "url": "https://x.com/sour_kiwi375/status/2049953593231568949",
+   "username": "sour_kiwi375",
+   "created_at": "2026-04-30T20:46:37.000Z",
+   "text": "@pierremakesit @W33Z_global This is really nice idea. I have a standing desk n i never use it",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Has a standing desk and never uses it",
+   "wish": "",
+   "representativeness": 0.355
+  },
+  {
+   "id": "2113657150740513037",
+   "url": "https://x.com/PickOrange/status/2113657150740513037",
+   "username": "PickOrange",
+   "created_at": "2026-10-23T15:41:49.000Z",
+   "text": "@BertrandDiouly Yeah I would have to change quite a bit with my current setup to make that happen, but if I actually used it I would benefit greatly. I do have a standing desk at work and NEVER use it, but they won't let us get the treadmill things either.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Has a standing desk at work and NEVER uses it",
+   "wish": "",
+   "representativeness": 0.355
+  },
+  {
+   "id": "2097729619000467793",
+   "url": "https://x.com/HodlHudge/status/2097729619000467793",
+   "username": "HodlHudge",
+   "created_at": "2026-09-09T16:51:29.000Z",
+   "text": "@saylor me buying \"cyberspace\" in 2021:\nalso bought a standing desk i never stand at",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Bought a standing desk in 2021 they never stand at",
+   "wish": "",
+   "representativeness": 0.355
+  },
+  {
+   "id": "2087606463204036903",
+   "url": "https://x.com/cecexclusive__/status/2087606463204036903",
+   "username": "cecexclusive__",
+   "created_at": "2026-08-12T18:25:41.000Z",
+   "text": "I have a standing desk and I literally never stand, am I lazy?? 😭",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Has a standing desk and literally never stands",
+   "wish": "",
+   "representativeness": 0.328
+  },
+  {
+   "id": "2093004332085997911",
+   "url": "https://x.com/WokeyKong/status/2093004332085997911",
+   "username": "WokeyKong",
+   "created_at": "2026-08-27T15:54:53.000Z",
+   "text": "@chuggaaconroy my entire life revolves around my desk and I can tell you right now I'd never use a standing desk if I bout it. Not that its good for me, but still i'd use it maybe once.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Would use a standing desk maybe once if they bought one",
+   "wish": "",
+   "representativeness": 0.328
+  },
+  {
+   "id": "2081847740598726934",
+   "url": "https://x.com/robymakesvideos/status/2081847740598726934",
+   "username": "robymakesvideos",
+   "created_at": "2026-07-27T21:02:34.000Z",
+   "text": "@joelnolancaro I’ve got a standing desk AND plantar fasciitis. Win win!",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Has a standing desk AND plantar fasciitis",
+   "wish": "",
+   "representativeness": 0.328
+  },
+  {
+   "id": "2105433201590304906",
+   "url": "https://x.com/jillsdeal/status/2105433201590304906",
+   "username": "jillsdeal",
+   "created_at": "2026-09-30T23:02:46.000Z",
+   "text": "Today is my first day using a standing desk and I thought I was going to die but I’m on hour 6 right now and I feel great. 👍 a lot less back and leg pain. https://t.co/a5ZMRgmGUp",
+   "likes": 5,
+   "reposts": 0,
+   "sentiment": "positive",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "First day standing felt awful, but by hour 6 less back and leg pain",
+   "wish": "",
+   "representativeness": 0.299
+  },
+  {
+   "id": "2081085048321683622",
+   "url": "https://x.com/BeanScientist/status/2081085048321683622",
+   "username": "BeanScientist",
+   "created_at": "2026-07-25T18:31:54.000Z",
+   "text": "Yesterday when I got the Shams notification I was on the treadmill under my standing desk in my office and I smacked my desk and jumped off and yelled and I worked standing the rest of the day and now my desk won’t go down but that’s ok because we got Lebron.",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Motor & electronics failures",
+   "brand": "none",
+   "gist": "Desk won't go back down after being smacked",
+   "wish": "",
+   "representativeness": 0.271
+  },
+  {
+   "id": "2100000543628267662",
+   "url": "https://x.com/TebanDukeD/status/2100000543628267662",
+   "username": "TebanDukeD",
+   "created_at": "2026-09-15T23:15:20.000Z",
+   "text": "@CraftworkT Thanks for sharing !! Is the standing desk wobbly ? I’ve been thinking of getting one or the ikea countertop with drawers https://t.co/Gvdxbq6GWe",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Wobble & stability",
+   "brand": "none",
+   "gist": "Asks whether a standing desk is wobbly before buying",
+   "wish": "",
+   "representativeness": 0.255
+  },
+  {
+   "id": "2112507498423054799",
+   "url": "https://x.com/endcomplete/status/2112507498423054799",
+   "username": "endcomplete",
+   "created_at": "2026-10-20T11:33:30.000Z",
+   "text": "@FrybeamLLC I got a standing desk that doesn’t stand and a frame that’s so overbuilt that I can use monitor arms with no wobble at all, it totally changed my performance in game and it’s incredible how much it changed how I thought about my setup, best money I’ve ever spent",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "positive",
+   "category": "Wobble & stability",
+   "brand": "none",
+   "gist": "Overbuilt frame finally gave zero monitor wobble; best money spent",
+   "wish": "",
+   "representativeness": 0.255
+  },
+  {
+   "id": "2049983159018705383",
+   "url": "https://x.com/ScreechyTurnip/status/2049983159018705383",
+   "username": "ScreechyTurnip",
+   "created_at": "2026-04-30T22:44:06.000Z",
+   "text": "In a bid to lose weight I've decided to raise my standing desk at work and stand for my entire 8 eight hour shift. \nMy feet hurt, my abs hurt. \nMy coworkers are impressed with my endurance. \nI am slowly slimming down.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Standing a full 8-hour shift: feet and abs hurt",
+   "wish": "",
+   "representativeness": 0.255
+  },
+  {
+   "id": "2098408227893363171",
+   "url": "https://x.com/GeoffEff/status/2098408227893363171",
+   "username": "GeoffEff",
+   "created_at": "2026-09-11T13:48:02.000Z",
+   "text": "@th3taman @BWFeldy Guilty in that I've never actually stood at it. I only bought the standing desk to be able to adjust when gaming on my PC. It's time to move to couch gaming for me.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Bought it, never stand at it",
+   "brand": "none",
+   "gist": "Never actually stood at it; bought only for height adjustment",
+   "wish": "",
+   "representativeness": 0.227
+  },
+  {
+   "id": "2045473642381824372",
+   "url": "https://x.com/re_nylon/status/2045473642381824372",
+   "username": "re_nylon",
+   "created_at": "2026-04-18T12:04:54.000Z",
+   "text": "My feet hurt standing at my standing desk in these https://t.co/VfrjjIsU6l",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Foot, leg & back pain from standing",
+   "brand": "none",
+   "gist": "Feet hurt standing at the desk in the wrong shoes",
+   "wish": "",
+   "representativeness": 0.227
+  },
+  {
+   "id": "2109509297713619003",
+   "url": "https://x.com/CyanicOrange/status/2109509297713619003",
+   "username": "CyanicOrange",
+   "created_at": "2026-10-12T04:59:44.000Z",
+   "text": "My electric standing desk is being delivered today. Now the real challenge begins: can I assemble it on my own without summoning a man? If you don't hear from me in a few hours, assume I'm trapped under an instruction manual and questioning every life choice 🫠 https://t.co/hoingzOnb7",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Assembly & delivery damage",
+   "brand": "none",
+   "gist": "Dreading assembling an electric desk alone",
+   "wish": "",
+   "representativeness": 0.227
+  }
+ ]
+}

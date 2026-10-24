@@ -1,0 +1,1330 @@
+{
+ "schema_version": 1,
+ "topic": "refrigerators",
+ "generated_at": "2026-10-24T19:30:00+00:00",
+ "source": "seed:x-api-search+manual-labels",
+ "model": {
+  "label": "manual (seed)"
+ },
+ "queries": [],
+ "stats": {
+  "raw": 164,
+  "deduped": 164,
+  "noise_dropped": 99,
+  "search_calls": 7,
+  "noise_reasons": {
+   "ads, deals, brand/repair promos, jokes, off-topic (manual review)": 99
+  },
+  "kept": 65
+ },
+ "summary": {
+  "headline": "Top frustrations with refrigerators: ice makers and water dispensers that keep failing, painful repair and warranty experiences, and compressors that stop cooling.",
+  "text": "Of 65 genuine posts (from 164 pulled; ~60% was ads, repair-shop promos and jokes), 58 are negative. Ice makers alone account for 21 posts, often repeat failures followed by $500–800 repairs, and 9 posts push back on smart features, which points to an opening for a simple, reliable, easy-to-repair fridge."
+ },
+ "categories": [
+  {
+   "name": "Ice maker & water dispenser",
+   "count": 21,
+   "share": 0.323,
+   "description": "Ice makers freezing up, dying, or needing repeat replacement; dispenser clogs and leaks",
+   "sentiment": {
+    "negative": 17,
+    "neutral": 3,
+    "positive": 1
+   },
+   "top_brands": [
+    {
+     "name": "Samsung",
+     "count": 5
+    },
+    {
+     "name": "Whirlpool",
+     "count": 4
+    },
+    {
+     "name": "GE",
+     "count": 3
+    },
+    {
+     "name": "LG",
+     "count": 1
+    },
+    {
+     "name": "Frigidaire",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "6-month-old Whirlpool needed an ice maker replacement",
+    "Samsung ice maker busted in <2 yrs; 'do not buy Samsung'",
+    "Ice maker replaced 3 times in 6 years"
+   ]
+  },
+  {
+   "name": "Repair, warranty & service",
+   "count": 13,
+   "share": 0.2,
+   "description": "Slow or failed service visits, parts unavailable, warranties not honored, surprise charges",
+   "sentiment": {
+    "negative": 13,
+    "neutral": 0,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "LG",
+     "count": 7
+    },
+    {
+     "name": "Godrej",
+     "count": 1
+    },
+    {
+     "name": "Samsung",
+     "count": 1
+    },
+    {
+     "name": "KitchenAid",
+     "count": 1
+    },
+    {
+     "name": "Whirlpool",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "6.5-yr LG has 10-yr compressor warranty but model discontinued",
+    "Service visit abandoned; fridge still not cooling and food spoiling",
+    "1-yr-old fridge broke multiple times in 3 weeks; asking retailer for exchange to another brand"
+   ]
+  },
+  {
+   "name": "Not cooling / compressor failure",
+   "count": 11,
+   "share": 0.169,
+   "description": "Units that stop cooling, mostly compressor and control-board failures",
+   "sentiment": {
+    "negative": 11,
+    "neutral": 0,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "LG",
+     "count": 7
+    },
+    {
+     "name": "Samsung",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "Fridge suddenly died right after stocking the freezer",
+    "Fridge made unhealthy noises then died; struggling to afford replacement",
+    "LG compressor died; 1970s garage fridge still running"
+   ]
+  },
+  {
+   "name": "Smart features & apps",
+   "count": 9,
+   "share": 0.138,
+   "description": "Unwanted connectivity, software updates that brick units, 'why does a fridge need a computer'",
+   "sentiment": {
+    "negative": 8,
+    "neutral": 0,
+    "positive": 1
+   },
+   "top_brands": [
+    {
+     "name": "Samsung",
+     "count": 2
+    }
+   ],
+   "example_gists": [
+    "Samsung smart fridges stopped working after a bad software update in Korea",
+    "News: Samsung smart fridges hit chaos after software update",
+    "Doesn't want a smart fridge; wants dumb, cheap, reliable"
+   ]
+  },
+  {
+   "name": "Durability & longevity",
+   "count": 5,
+   "share": 0.077,
+   "description": "New fridges dying in 5-6 years vs old ones lasting decades; fragile plastic parts",
+   "sentiment": {
+    "negative": 4,
+    "neutral": 1,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "GE",
+     "count": 1
+    },
+    {
+     "name": "Samsung",
+     "count": 1
+    },
+    {
+     "name": "Frigidaire",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "5-yr Frigidaire's control 'brain' failed; cheaper to replace than repair",
+    "On 3rd fridge in 10 yrs; avoids wi-fi tech and ice makers now",
+    "GE Cafe ice maker died at 6 yrs; $800+ control board; food melted"
+   ]
+  },
+  {
+   "name": "Leaking",
+   "count": 2,
+   "share": 0.031,
+   "description": "Water lines freezing and leaking",
+   "sentiment": {
+    "negative": 2,
+    "neutral": 0,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "LG",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "Water line/evaporator fan keep freezing, causing leaks and a cracked freezer",
+    "After LG tech's pipe repair, fridge started leaking; deemed beyond repair"
+   ]
+  },
+  {
+   "name": "Price & value",
+   "count": 2,
+   "share": 0.031,
+   "description": "Premium prices that don't buy reliability",
+   "sentiment": {
+    "negative": 1,
+    "neutral": 1,
+    "positive": 0
+   },
+   "top_brands": [
+    {
+     "name": "Samsung",
+     "count": 1
+    },
+    {
+     "name": "LG",
+     "count": 1
+    }
+   ],
+   "example_gists": [
+    "Explains paying a premium for LG over cheaper Samsung/Haier",
+    "$3,500 fridge plus $600 ice maker replacement 2 years later"
+   ]
+  },
+  {
+   "name": "Noise",
+   "count": 1,
+   "share": 0.015,
+   "description": "Noisy units",
+   "sentiment": {
+    "negative": 1,
+    "neutral": 0,
+    "positive": 0
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Replaced a noisy, unreliable old fridge with a mini chiller to cut electricity costs"
+   ]
+  },
+  {
+   "name": "other",
+   "count": 1,
+   "share": 0.015,
+   "description": "Other fridge complaints",
+   "sentiment": {
+    "negative": 1,
+    "neutral": 0,
+    "positive": 0
+   },
+   "top_brands": [],
+   "example_gists": [
+    "Food at the back of the fridge freezes (uneven temps)"
+   ]
+  }
+ ],
+ "sentiment": {
+  "negative": 58,
+  "neutral": 5,
+  "positive": 2
+ },
+ "brands": [
+  {
+   "name": "LG",
+   "count": 17
+  },
+  {
+   "name": "Samsung",
+   "count": 11
+  },
+  {
+   "name": "Whirlpool",
+   "count": 5
+  },
+  {
+   "name": "GE",
+   "count": 4
+  },
+  {
+   "name": "Frigidaire",
+   "count": 2
+  },
+  {
+   "name": "Godrej",
+   "count": 1
+  },
+  {
+   "name": "KitchenAid",
+   "count": 1
+  }
+ ],
+ "volume": {
+  "query": "(fridge OR refrigerator) -is:retweet lang:en",
+  "granularity": "day",
+  "label": "All posts mentioning the topic, last 7 days",
+  "series": [
+   {
+    "date": "2026-10-17",
+    "count": 941
+   },
+   {
+    "date": "2026-10-18",
+    "count": 4645
+   },
+   {
+    "date": "2026-10-19",
+    "count": 4454
+   },
+   {
+    "date": "2026-10-20",
+    "count": 4774
+   },
+   {
+    "date": "2026-10-21",
+    "count": 5367
+   },
+   {
+    "date": "2026-10-22",
+    "count": 5198
+   },
+   {
+    "date": "2026-10-23",
+    "count": 5342
+   },
+   {
+    "date": "2026-10-24",
+    "count": 4072
+   }
+  ]
+ },
+ "dig_suggestions": [
+  {
+   "label": "Filter to ice maker complaints",
+   "kind": "filter_category",
+   "category": "Ice maker & water dispenser"
+  },
+  {
+   "label": "Which brands come up most in repair & warranty?",
+   "kind": "brands",
+   "category": "Repair, warranty & service"
+  },
+  {
+   "label": "What do people wish existed?",
+   "kind": "wishes"
+  },
+  {
+   "label": "Show the most-liked complaints",
+   "kind": "top_liked"
+  }
+ ],
+ "notes": [
+  "Seed data: real X posts, labeled by hand; brand counts reflect search terms, not market share."
+ ],
+ "posts": [
+  {
+   "id": "2105416658852397100",
+   "url": "https://x.com/MAPatriot67/status/2105416658852397100",
+   "username": "MAPatriot67",
+   "created_at": "2026-09-30T21:57:02.000Z",
+   "text": "@ARmastrangelo @GE_Appliances I had the same thing happen with a 5 year old Frigidaire French Door Refrigerator some years back. The repair guy said it would be more expensive to repair than replace. I did some research and found out that these fridges have \"a brain\" that basically controls everything. The https://t.co/6EvwPzF1wL",
+   "likes": 413,
+   "reposts": 24,
+   "sentiment": "negative",
+   "category": "Durability & longevity",
+   "brand": "Frigidaire",
+   "gist": "5-yr Frigidaire's control 'brain' failed; cheaper to replace than repair",
+   "wish": "",
+   "representativeness": 0.74
+  },
+  {
+   "id": "2103812200221573338",
+   "url": "https://x.com/FrankBr05713205/status/2103812200221573338",
+   "username": "FrankBr05713205",
+   "created_at": "2026-09-26T11:41:30.000Z",
+   "text": "When are we going to learn that \"Simple is almost always better\"? Who actually needs a \"Smart refrigerator\"? A software update went sour for some owners of Samsung smart fridges in Korea when their refrigerators totally stopped working. Reports of owners complaining about spoiled https://t.co/AWE9fewZyQ",
+   "likes": 188,
+   "reposts": 28,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "Samsung",
+   "gist": "Samsung smart fridges stopped working after a bad software update in Korea",
+   "wish": "",
+   "representativeness": 0.707
+  },
+  {
+   "id": "2108513343451398228",
+   "url": "https://x.com/pulseby_M/status/2108513343451398228",
+   "username": "pulseby_M",
+   "created_at": "2026-10-09T11:02:10.000Z",
+   "text": "My refrigerator died, and apparently asking a neighbor for a favor gave her permission to choose her own payment. A few days ago, my fridge suddenly stopped working. I had just stocked the freezer with meat, and the replacement refrigerator wouldn’t arrive for several days. I https://t.co/AJagN3YycR",
+   "likes": 93,
+   "reposts": 77,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "none",
+   "gist": "Fridge suddenly died right after stocking the freezer",
+   "wish": "",
+   "representativeness": 0.678
+  },
+  {
+   "id": "2113025920521080833",
+   "url": "https://x.com/SethIsfet/status/2113025920521080833",
+   "username": "SethIsfet",
+   "created_at": "2026-10-21T21:53:32.000Z",
+   "text": "Sooo I hate doing shit like this so I'll get to the point. I've mentioned on stream some struggles with paying bills lately and my fridge making some unhealthy noises, and this morning it has just up and died. I'm going to need to figure something out by the end of the day before https://t.co/RdmL9E1c3d",
+   "likes": 46,
+   "reposts": 9,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "none",
+   "gist": "Fridge made unhealthy noises then died; struggling to afford replacement",
+   "wish": "",
+   "representativeness": 0.65
+  },
+  {
+   "id": "2106478517378572314",
+   "url": "https://x.com/OwenGregorian/status/2106478517378572314",
+   "username": "OwenGregorian",
+   "created_at": "2026-10-03T20:16:29.000Z",
+   "text": "These 'smart' fridges got a software update — then the chaos began | Andrew Chapados, Blaze Media  Those are the apparent benefits of new Samsung smart fridges, which look more like gigantic phone screens than they do refrigerators.  With a 32-inch display and the ability to tell https://t.co/JaY1cj6vDd",
+   "likes": 31,
+   "reposts": 3,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "Samsung",
+   "gist": "News: Samsung smart fridges hit chaos after software update",
+   "wish": "",
+   "representativeness": 0.634
+  },
+  {
+   "id": "2111928447111205284",
+   "url": "https://x.com/Kathe56Kat/status/2111928447111205284",
+   "username": "Kathe56Kat",
+   "created_at": "2026-10-18T21:12:34.000Z",
+   "text": "@smc429 .I am on my 4th washer dryer in 10 years and 3rd refrigerator..I studied and learned do not get any with wi-fi or computer technology..and do not get a refrigerator with an ice maker…I thought back to when they lasted 10 years and they were just basic..so now this fancy fridge",
+   "likes": 18,
+   "reposts": 1,
+   "sentiment": "negative",
+   "category": "Durability & longevity",
+   "brand": "none",
+   "gist": "On 3rd fridge in 10 yrs; avoids wi-fi tech and ice makers now",
+   "wish": "A long-lasting fridge without wi-fi or an ice maker",
+   "representativeness": 0.612
+  },
+  {
+   "id": "2109406609223082378",
+   "url": "https://x.com/LibraLady1007/status/2109406609223082378",
+   "username": "LibraLady1007",
+   "created_at": "2026-10-11T22:11:41.000Z",
+   "text": "@GrowingUpRetro My Kenmore fridge was 22 years old and there were no repair parts for it anymore. My Whirlpool was 6 months old and needed the ice maker replaced! 🙄",
+   "likes": 10,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Whirlpool",
+   "gist": "6-month-old Whirlpool needed an ice maker replacement",
+   "wish": "",
+   "representativeness": 0.589
+  },
+  {
+   "id": "2109785385278505374",
+   "url": "https://x.com/Emceemur/status/2109785385278505374",
+   "username": "Emceemur",
+   "created_at": "2026-10-12T23:16:48.000Z",
+   "text": "Whoever needs to hear this, my Samsung refrigerator already has a busted ice maker after under 2 years. Our new Samsung washer is leaking, not even a year old. DO NOT BUY @SamsungUS products. Samsung? More like Sam-dung 💩. TFOH. #cheap #trash https://t.co/Aew09x3cn3",
+   "likes": 7,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Samsung",
+   "gist": "Samsung ice maker busted in <2 yrs; 'do not buy Samsung'",
+   "wish": "",
+   "representativeness": 0.576
+  },
+  {
+   "id": "2103875866212061648",
+   "url": "https://x.com/embeddedkurt/status/2103875866212061648",
+   "username": "embeddedkurt",
+   "created_at": "2026-09-26T15:54:29.000Z",
+   "text": "@FrankBr05713205 My mid-1970’s garage fridge is still chugging along. Was included with the house we purchased 10 years ago. Meanwhile, we have gone through an ZLG refrigerator, due to a dead compressor. It still had a warranty left on the compressor, however the local authorized service company",
+   "likes": 2,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "LG compressor died; 1970s garage fridge still running",
+   "wish": "",
+   "representativeness": 0.536
+  },
+  {
+   "id": "2114033304672313419",
+   "url": "https://x.com/post_game8/status/2114033304672313419",
+   "username": "post_game8",
+   "created_at": "2026-10-24T16:36:31.000Z",
+   "text": "@SignoreFor 1st one? I’ve had this model since August 2019!!! They already changed out the fridge in 2024 bc of the multiple issues. Water line freezing constantly evaporator fan freezing causing leaking and refreezing eventually cracking the freezer",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Leaking",
+   "brand": "none",
+   "gist": "Water line/evaporator fan keep freezing, causing leaks and a cracked freezer",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2114013448019570893",
+   "url": "https://x.com/GrizzFM_16/status/2114013448019570893",
+   "username": "GrizzFM_16",
+   "created_at": "2026-10-24T15:17:37.000Z",
+   "text": "@_kh_dj Refrigerator that I’ve had to replace the ice maker 3 times in six years. Brand new tablet that is less than a year old and the battery can’t hold a charge. TV that disconnects from the sound bar randomly over and over.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "Ice maker replaced 3 times in 6 years",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2104804164752535724",
+   "url": "https://x.com/SigynX1/status/2104804164752535724",
+   "username": "SigynX1",
+   "created_at": "2026-09-29T05:23:12.000Z",
+   "text": "@yardsaleartist Great bargain! Our ice maker in the fridge stopped working about a year ago. I would have grabbed that up too.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "Fridge ice maker stopped working a year ago",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2111297076118147190",
+   "url": "https://x.com/VividShade/status/2111297076118147190",
+   "username": "VividShade",
+   "created_at": "2026-10-17T03:23:43.000Z",
+   "text": "@Shaykay1717 Bought a brand new refrigerator 2 years ago. Stopped working. Not cooling anything. Not freezing anything. Such crap",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "none",
+   "gist": "2-yr-old fridge stopped cooling and freezing entirely",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2105480708315652346",
+   "url": "https://x.com/WeimeeLady/status/2105480708315652346",
+   "username": "WeimeeLady",
+   "created_at": "2026-10-01T02:11:33.000Z",
+   "text": "@ARmastrangelo @GE_Appliances We also bought a GE Cafe fridge in 2020. The ice maker stopped working, we called a repair man. He came today. It will be $800+ to put in a new computer board. I went to get ice cream tonight, and it's basically turned to soup. 6 years seems to be the magic number! What a rip off",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Durability & longevity",
+   "brand": "GE",
+   "gist": "GE Cafe ice maker died at 6 yrs; $800+ control board; food melted",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2105454850540437644",
+   "url": "https://x.com/tfnelson091/status/2105454850540437644",
+   "username": "tfnelson091",
+   "created_at": "2026-10-01T00:28:48.000Z",
+   "text": "@ARmastrangelo @GE_Appliances I have a refrigerator from the 70’s in my garage. It still beeps if the door is left open. My 6 year old fridge has had the ice maker replaced 3 times. Apparently it’s the govt mandates that are so expensive, the quality of the appliance is dirt. 😡",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "6-yr-old fridge had ice maker replaced 3 times; 70s fridge still works",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2105460880179663289",
+   "url": "https://x.com/caymankai40/status/2105460880179663289",
+   "username": "caymankai40",
+   "created_at": "2026-10-01T00:52:46.000Z",
+   "text": "@ARmastrangelo @GE_Appliances We have a 35 and a 20 year old fridge in the garage and they still great. Meanwhile my 4 yr old Samsung that I bout brand new for $2500 that looks similar to your LG had to have the compressor replaced after 6 months. Luckily I had the warranty and only had to pay the service of",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "Samsung",
+   "gist": "$2,500 Samsung needed a new compressor at 6 months; old garage fridges fine",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2105857009757438026",
+   "url": "https://x.com/jewishdad1/status/2105857009757438026",
+   "username": "jewishdad1",
+   "created_at": "2026-10-02T03:06:50.000Z",
+   "text": "@TerenceKelly84 thankfully our samsung fridge &amp; freezer still cools properly but every plastic thing (ice maker, water filter housing, drawers) has broken on it. I've given up on replacing every 200$ plastic thing and am just waiting for it to die fully before replacing it",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Durability & longevity",
+   "brand": "Samsung",
+   "gist": "Every plastic part (ice maker, filter housing, drawers) broke",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2103855984997208218",
+   "url": "https://x.com/_jusshana/status/2103855984997208218",
+   "username": "_jusshana",
+   "created_at": "2026-09-26T14:35:29.000Z",
+   "text": "My ice maker not working on my refrigerator @Samsung send the people out.",
+   "likes": 1,
+   "reposts": 1,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Samsung",
+   "gist": "Ice maker not working; asking Samsung to send a tech",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2105433490649161755",
+   "url": "https://x.com/ChanatLucine/status/2105433490649161755",
+   "username": "ChanatLucine",
+   "created_at": "2026-09-30T23:03:55.000Z",
+   "text": "@ARmastrangelo @GE_Appliances We have an LG fridge with dead compressor at 5 yrs and 2 months. Warranty runs out at 5 yrs. Cost the same to repair as buy new. The problem, all fridges rate &lt;20% in consumer satisfaction according to consumer reports. Even the ones they recommend. Have no idea what to buy next.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "LG compressor died at 5y2m, just past warranty; repair = price of new",
+   "wish": "Repairs that cost less than a new fridge",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2112207751934042587",
+   "url": "https://x.com/raemm/status/2112207751934042587",
+   "username": "raemm",
+   "created_at": "2026-10-19T15:42:25.000Z",
+   "text": "6 1/2 year old LG refrigerator. 10 year warranty on compressor but already discontinued. @LGUS",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "6.5-yr LG has 10-yr compressor warranty but model discontinued",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2107779922001645658",
+   "url": "https://x.com/Yasirrrrrr6789/status/2107779922001645658",
+   "username": "Yasirrrrrr6789",
+   "created_at": "2026-10-07T10:27:48.000Z",
+   "text": "@LGIndia My LG refrigerator compressor has failed twice in 7–8 years. The latest issue has been pending for over a month, despite repeated follow-ups. No proper response or replacement under warranty. Please escalate to the Telangana/Karimnagar team and resolve this urgently. #LG https://t.co/LFRv5XFJXK",
+   "likes": 1,
+   "reposts": 1,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "LG compressor failed twice in 7-8 yrs; month-long pending complaint",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2106422117822861519",
+   "url": "https://x.com/polychocobros/status/2106422117822861519",
+   "username": "polychocobros",
+   "created_at": "2026-10-03T16:32:22.000Z",
+   "text": "Why does my fridge freeze things if i put it all the way in the back like i just got disgusted bc yogurt had a chunk of ice in it 🫩",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "other",
+   "brand": "none",
+   "gist": "Food at the back of the fridge freezes (uneven temps)",
+   "wish": "",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2109671043572850731",
+   "url": "https://x.com/stephenituruka/status/2109671043572850731",
+   "username": "stephenituruka",
+   "created_at": "2026-10-12T15:42:27.000Z",
+   "text": "@Bonks_n_Stonks *super retarded 😂. I don't need a smart fridge, it is stupid having a smart fridge. I just need dumb, cheap and reliable home appliances.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Doesn't want a smart fridge; wants dumb, cheap, reliable",
+   "wish": "A dumb, cheap, reliable fridge",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2109907714482811297",
+   "url": "https://x.com/shuvankr/status/2109907714482811297",
+   "username": "shuvankr",
+   "created_at": "2026-10-13T07:22:53.000Z",
+   "text": "Bad Smart-Fridge Coding  Smart Fridge Temperature should never be more than ambient Temperature. The Fridges should have shutdown automatically and trigger SOS notifications   Hackers did them a favour. https://t.co/72abDs7HlA",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Smart fridge coding flawed; should auto-shutdown and alert when warm",
+   "wish": "A fridge that shuts down safely and alerts you when it gets warm",
+   "representativeness": 0.519
+  },
+  {
+   "id": "2107340644188319917",
+   "url": "https://x.com/TechTurbanator/status/2107340644188319917",
+   "username": "TechTurbanator",
+   "created_at": "2026-10-06T05:22:16.000Z",
+   "text": "Why did I pay a premium for an LG 343L refrigerator when Samsung &amp; Haier had lower-priced options?  I recently bought this LG 343L double-door refrigerator for around ₹36,000.  Before buying it, I compared options from LG, Samsung and Haier. I could get Samsung options around https://t.co/kv7hYKv9uP",
+   "likes": 12,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Price & value",
+   "brand": "LG",
+   "gist": "Explains paying a premium for LG over cheaper Samsung/Haier",
+   "wish": "",
+   "representativeness": 0.496
+  },
+  {
+   "id": "2114042761183678894",
+   "url": "https://x.com/gabystubbs1/status/2114042761183678894",
+   "username": "gabystubbs1",
+   "created_at": "2026-10-24T17:14:05.000Z",
+   "text": "@MrsNotSoGuilty well ahead of you there. switched to mini chiller fridge for daily milk made up from milk powder living on tins and daily fresh provisions. saving a fortune on elec meter cards  on a noisy unreliable old fridge",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Noise",
+   "brand": "none",
+   "gist": "Replaced a noisy, unreliable old fridge with a mini chiller to cut electricity costs",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2114036857315193052",
+   "url": "https://x.com/sajjadmanal/status/2114036857315193052",
+   "username": "sajjadmanal",
+   "created_at": "2026-10-24T16:50:38.000Z",
+   "text": "Worst customer service experience with @GodrejAppliance . Scheduled a refrigerator service, &amp; your team has completely abandoned the issue. The fridge is still not cooling, food is spoiling, &amp; no one cares to resolve it. Absolute harassment. Resolve this immediately. #godrej",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "Godrej",
+   "gist": "Service visit abandoned; fridge still not cooling and food spoiling",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2114034095210807570",
+   "url": "https://x.com/Bhaveshoha4/status/2114034095210807570",
+   "username": "Bhaveshoha4",
+   "created_at": "2026-10-24T16:39:39.000Z",
+   "text": "@LGIndia My 3-year-old LG refrigerator has broken down twice. A freezer part was replaced 6 months ago. Now, after 7–8 days without cooling, your team replaced the PCB, but the fridge is STILL NOT WORKING! Request senior management intervention and a permanent solution.",
+   "likes": 0,
+   "reposts": 1,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "3-yr-old LG broke down twice; PCB replaced but still not cooling",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2114018113918325204",
+   "url": "https://x.com/bigmisschief/status/2114018113918325204",
+   "username": "bigmisschief",
+   "created_at": "2026-10-24T15:36:09.000Z",
+   "text": "@VijaySales the issue is still not resolved. In a short span of 3 weeks the 1-year old fridge has broken down multiple times. We’re very dissatisfied with it. We want to exchange this refrigerator for a different model from a different brand. Please help in this process. https://t.co/uWW5PxSyf8",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "none",
+   "gist": "1-yr-old fridge broke multiple times in 3 weeks; asking retailer for exchange to another brand",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2114014457357901929",
+   "url": "https://x.com/ShivamK83510852/status/2114014457357901929",
+   "username": "ShivamK83510852",
+   "created_at": "2026-10-24T15:21:37.000Z",
+   "text": "Dear @LGIndia, my refrigerator is not cooling despite being under warranty. I raised a complaint on 22 October (Call No. RNA261022061428). Your technician confirmed that the compressor needs replacement under warranty, but my issue remains unresolved.Please intervene and resolve https://t.co/gRF4gQ9B02",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "Under-warranty LG not cooling; compressor replacement confirmed but unresolved",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105387799994372288",
+   "url": "https://x.com/dstidham2/status/2105387799994372288",
+   "username": "dstidham2",
+   "created_at": "2026-09-30T20:02:22.000Z",
+   "text": "@ARmastrangelo @GE_Appliances I bought a GE fridge and the thing sucked.  It was super noisy and the ice maker stopped working. We fixed the Icemaker and that lasted maybe 2 months and stopped again. At least it was consistent about not working.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "GE",
+   "gist": "GE fridge was noisy and ice maker kept failing even after repair",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2111912347665383658",
+   "url": "https://x.com/RHOyal_Thunder/status/2111912347665383658",
+   "username": "RHOyal_Thunder",
+   "created_at": "2026-10-18T20:08:35.000Z",
+   "text": "My fridge is LITERALLY 1 year old and my ice maker just randomly stopped working. Crap breaks...and when you own it you have to repair it.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "1-year-old fridge's ice maker randomly stopped working",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105643869459378249",
+   "url": "https://x.com/jman8383/status/2105643869459378249",
+   "username": "jman8383",
+   "created_at": "2026-10-01T12:59:54.000Z",
+   "text": "@ARmastrangelo @GE_Appliances I had the same fridge. Last about 6 months then randomly the ice maker, lights and water dispenser stopped working. Had a GE repairman out 4 times. Finally he recommended returning it. GE gave me a new fridge for $1,300. Total junk. I will never buy GE again.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "GE",
+   "gist": "Ice maker, lights, dispenser died at 6 months; 4 repair visits; 'never buy GE again'",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105367223695241599",
+   "url": "https://x.com/D29625/status/2105367223695241599",
+   "username": "D29625",
+   "created_at": "2026-09-30T18:40:36.000Z",
+   "text": "@ARmastrangelo @GE_Appliances You bought a fridge with an ice maker in  the door of the refrigerator part, not the freezer section. It's a pretty terrible design.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "In-door (fresh-food side) ice maker is a terrible design",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2103015487664005411",
+   "url": "https://x.com/ranahmx1/status/2103015487664005411",
+   "username": "ranahmx1",
+   "created_at": "2026-09-24T06:55:39.000Z",
+   "text": "refrigerator ice maker been broken for three months and I still open the dispenser expecting ice every single time",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "Ice maker broken for 3 months",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2110106089517994034",
+   "url": "https://x.com/Anjali5911/status/2110106089517994034",
+   "username": "Anjali5911",
+   "created_at": "2026-10-13T20:31:10.000Z",
+   "text": "Samsung Refrigerator Sucks! Ice Maker Failures: French door models with in-door ice makers are infamous for freezing up, leaking, forming ice dams, or stopping production completely. @SamsungIndia",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Samsung",
+   "gist": "Samsung French-door in-door ice makers freeze up, leak, stop producing",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105661908003238248",
+   "url": "https://x.com/carver_maddie/status/2105661908003238248",
+   "username": "carver_maddie",
+   "created_at": "2026-10-01T14:11:34.000Z",
+   "text": "fridge ice maker been broken for 6 months, i just buy bags of ice now and pretend it's normal",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "none",
+   "gist": "Ice maker broken 6 months; just buys bagged ice",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2110393014245810667",
+   "url": "https://x.com/afteranarc/status/2110393014245810667",
+   "username": "afteranarc",
+   "created_at": "2026-10-14T15:31:18.000Z",
+   "text": "Hey Samsung Fridge owners... anyone know how to solve this ice maker problem?  I've had the unit replaced twice, it's now out of warranty, and I have to take a hairdryer to this thing every few weeks to stop it from become a solid block of ice @samsung @samsungca Frustrated AF https://t.co/6T2K4djY7b",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Samsung",
+   "gist": "Ice maker freezes solid; unit replaced twice, now hairdryer every few weeks",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2111195899170824244",
+   "url": "https://x.com/BrianlifeMiguel/status/2111195899170824244",
+   "username": "BrianlifeMiguel",
+   "created_at": "2026-10-16T20:41:41.000Z",
+   "text": "Thinking of buying a Samsung refrigerator with an ice maker? $3,500 upfront, plus another $600 just two years later to replace the ice maker. Do the math! @SamsungUS",
+   "likes": 0,
+   "reposts": 1,
+   "sentiment": "negative",
+   "category": "Price & value",
+   "brand": "Samsung",
+   "gist": "$3,500 fridge plus $600 ice maker replacement 2 years later",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2107962207929577951",
+   "url": "https://x.com/fsteffanjr/status/2107962207929577951",
+   "username": "fsteffanjr",
+   "created_at": "2026-10-07T22:32:09.000Z",
+   "text": "@SamsungUS 8 weeks minimum for the part to fix my 2 year old $3,000 Samsung refrigerator with a broken water filter housing. $400 + labor to replace it once the part becomes available. Apparently so many are breaking you can't keep the replacement parts in stock. In the meantime,",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "Samsung",
+   "gist": "8+ week wait for water filter housing part; $400 + labor",
+   "wish": "Replacement parts in days, not 8+ weeks",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2111555701772591444",
+   "url": "https://x.com/Wackoauggie/status/2111555701772591444",
+   "username": "Wackoauggie",
+   "created_at": "2026-10-17T20:31:24.000Z",
+   "text": "@Aileen23_345 Old school ice tray.  Unlike the ice maker in my four-thousand-dollar Samsung refrigerator that thing always worked.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Samsung",
+   "gist": "Old ice tray beats the ice maker in a $4k Samsung",
+   "wish": "An ice maker as dependable as an old ice tray",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2103143676063174783",
+   "url": "https://x.com/souravbiswas06/status/2103143676063174783",
+   "username": "souravbiswas06",
+   "created_at": "2026-09-24T15:25:01.000Z",
+   "text": "@LGIndia I had a Lg 360 ltr fridge which was not cooling. I have called LG authorized person from LG every time but they say this needs to be changed or that. They made me change many things and I spent Rs. 9000. Lastly they said, compressor is not functioning. #Bad_LG_SERVICE",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "LG techs made him replace parts (Rs 9,000) before declaring compressor dead",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2111058776128450988",
+   "url": "https://x.com/AnjuSMS/status/2111058776128450988",
+   "username": "AnjuSMS",
+   "created_at": "2026-10-16T11:36:48.000Z",
+   "text": "@lg_india I complaint about my LG refrigerator as it is not cooling.. u assigned someone and guess what when I called that person he said he has already left job",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "LG not-cooling complaint assigned to a tech who had quit",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105446689322729825",
+   "url": "https://x.com/RatulDu55978651/status/2105446689322729825",
+   "username": "RatulDu55978651",
+   "created_at": "2026-09-30T23:56:22.000Z",
+   "text": "@RelianceDigital @LGIndia @MahaCyber1 My LG refrigerator developed a PCB + compressor issue. LG estimated repair at ~₹10,000. We then found our extended warranty was valid until 2029. I raised a Reliance RESQ complaint on 23 Sept 2026.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "PCB + compressor failure; extended-warranty claim stuck",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2106730745385640394",
+   "url": "https://x.com/ZahidPatel94387/status/2106730745385640394",
+   "username": "ZahidPatel94387",
+   "created_at": "2026-10-04T12:58:45.000Z",
+   "text": "@LGIndia @LGIndiaCare  My LG fridge is under warranty till 27 Oct. Complaint: RNA261004094440. Bottom tray had frost issue; after LG technician's pipe repair, it started leaking water. &amp; they says it’s due to moisture beyond repair. I have a 3-year-old child serious safety risk.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Leaking",
+   "brand": "LG",
+   "gist": "After LG tech's pipe repair, fridge started leaking; deemed beyond repair",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105321052834578712",
+   "url": "https://x.com/NaveendDwivedi/status/2105321052834578712",
+   "username": "NaveendDwivedi",
+   "created_at": "2026-09-30T15:37:08.000Z",
+   "text": "@jagograhakjago @PralhadJoshiOfc @Nimu_Bambhaniya @blvermaup @inidhikhare @mygovindia @PIB_India @PMOIndia @nch1915 Worth less, I'm unable to get service for my LG refrigerator due to missing serial number however compressor has 10 years of warranty.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "Denied LG service over missing serial number despite 10-yr compressor warranty",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2103808674573729963",
+   "url": "https://x.com/rajshrishrimal/status/2103808674573729963",
+   "username": "rajshrishrimal",
+   "created_at": "2026-09-26T11:27:29.000Z",
+   "text": "@LGIndia @LGIndiaSupport for Case No: RNA260926022062. Our 606L Frost Free Refrigerator (Model: GR-M772HLHM) stopped working due to a PCB issue, but we're told the part is discontinued. The unit carries a 10-Year Inverter Compressor Warranty. We kindly ask LG to assist",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "PCB failed and part is discontinued; asks LG to honor warranty",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2113182144940114149",
+   "url": "https://x.com/city_girl09/status/2113182144940114149",
+   "username": "city_girl09",
+   "created_at": "2026-10-22T08:14:19.000Z",
+   "text": "@LGIndia @LGIndia I have another LG Fridge and thankfully, never had any issue, but this specific one needs a new compressor every year. Please confirm what happens after the compressor warranty is over.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "One LG fridge needs a new compressor every year",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2111150254024511548",
+   "url": "https://x.com/PDeeppurple/status/2111150254024511548",
+   "username": "PDeeppurple",
+   "created_at": "2026-10-16T17:40:18.000Z",
+   "text": "@LGUS @LGUSSupport  2017 LG refrigerator still under 10-year compressor warranty. Compressor failed 3 times (repairs RNN210602041402 and RNN220518054671).  LG closed the case after only offering $425. Demanding full replacement or refund under California Song-Beverly Act.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Not cooling / compressor failure",
+   "brand": "LG",
+   "gist": "Compressor failed 3 times; LG offered $425; demands replacement",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2108594854297006103",
+   "url": "https://x.com/Sierra_2015/status/2108594854297006103",
+   "username": "Sierra_2015",
+   "created_at": "2026-10-09T16:26:03.000Z",
+   "text": "Not @LGUS charging me $400 (unauthorized and no communication) for a tech to fix the compressor on our fridge when it’s covered under the 5 year warranty.   Then a lady calling me telling me I can’t get a refund and I owe LG that payment for having the tech come fix the fridge?",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "LG",
+   "gist": "Charged $400 without consent for a warranty-covered compressor repair",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105362407115968640",
+   "url": "https://x.com/motoman617/status/2105362407115968640",
+   "username": "motoman617",
+   "created_at": "2026-09-30T18:21:28.000Z",
+   "text": "@ARmastrangelo @GE_Appliances I’ve got a Frigidaire Gallery refrigerator bought in 2025 and the ice maker quit just after the warranty expired. So I turned off the water to it and use ice trays. Funny thing is the alert to replace the water filter still works because it keeps going off.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "Frigidaire",
+   "gist": "Ice maker quit just after warranty; filter alert still nags",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2105585518842884575",
+   "url": "https://x.com/clowntown75/status/2105585518842884575",
+   "username": "clowntown75",
+   "created_at": "2026-10-01T09:08:02.000Z",
+   "text": "@GE_Appliances @ARmastrangelo My $4k GE Cafe fridge, after 2 years, the ice maker broke. The repair was $500. My $1200 GE Cafe microwave shit itself after 3 years. Had to buy a new one for another $1200. Pathetic.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Ice maker & water dispenser",
+   "brand": "GE",
+   "gist": "$4k GE Cafe ice maker broke at 2 yrs; $500 repair",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2109740285328851222",
+   "url": "https://x.com/GGIL1603/status/2109740285328851222",
+   "username": "GGIL1603",
+   "created_at": "2026-10-12T20:17:35.000Z",
+   "text": "@USADocumented My ice maker went out in my kitchen aid fridge. I was referred to an appliance guru, who charged me $173 for a replacement ice maker, new valve. He charged me $143 for the labor, removed my old unit, then said the one he bought would need connector mods. Turns out he bought an",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "KitchenAid",
+   "gist": "Ice maker repair guy overcharged and bought the wrong part",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2109730390600560930",
+   "url": "https://x.com/budrich17/status/2109730390600560930",
+   "username": "budrich17",
+   "created_at": "2026-10-12T19:38:16.000Z",
+   "text": "Still can never answer the age-old question of \"why does my refrigerator need to have a computer with it?\" https://t.co/e6w1bWd2wL",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Why does a refrigerator need a computer?",
+   "wish": "A fridge without a computer in it",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2112615573993488846",
+   "url": "https://x.com/centurysteve/status/2112615573993488846",
+   "username": "centurysteve",
+   "created_at": "2026-10-20T18:42:57.000Z",
+   "text": "Why does my fridge keeping flashing up it wants to connect to the fking internet",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Fridge keeps flashing prompts to connect to the internet",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2111088324408684896",
+   "url": "https://x.com/0xZaco/status/2111088324408684896",
+   "username": "0xZaco",
+   "created_at": "2026-10-16T13:34:13.000Z",
+   "text": "why does my fridge have a software update pending. it's a fridge",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Annoyed a fridge has a pending software update",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2106768446839222545",
+   "url": "https://x.com/PRASHANTPA85917/status/2106768446839222545",
+   "username": "PRASHANTPA85917",
+   "created_at": "2026-10-04T15:28:34.000Z",
+   "text": "@Flipkart @FlipkartSupport Pathetic service by flipkart my refrigerator was supposed to be delivered by 30th not delivered yet, no support on call. AI agents give standard response via BOT which is annoying.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "none",
+   "gist": "Fridge delivery late; only bot replies from retailer support",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2103828658381295676",
+   "url": "https://x.com/iamBhasker0456/status/2103828658381295676",
+   "username": "iamBhasker0456",
+   "created_at": "2026-09-26T12:46:54.000Z",
+   "text": "@whirlpool_india  Last week I raised complaint, technical person visited and opened the top door unit and he said that he doesn't understand what's the problem is. Yesterday again my fridge is not working,so annoying, buying whirlpool is really useless.",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Repair, warranty & service",
+   "brand": "Whirlpool",
+   "gist": "Whirlpool tech couldn't diagnose; fridge stopped again",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2110866787474833520",
+   "url": "https://x.com/aiopshq/status/2110866787474833520",
+   "username": "aiopshq",
+   "created_at": "2026-10-15T22:53:54.000Z",
+   "text": "@alliekmiller Your smart fridge is the worst password in your house lol. Also you don’t need a smart fridge",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "negative",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Smart fridge is the weakest security point in the house",
+   "wish": "",
+   "representativeness": 0.49
+  },
+  {
+   "id": "2107290207318130935",
+   "url": "https://x.com/Sonderisfon/status/2107290207318130935",
+   "username": "Sonderisfon",
+   "created_at": "2026-10-06T02:01:51.000Z",
+   "text": "This was clogging up the water line to my LG fridge with dual ice-maker when the water dispenser stopped working.  New what’s is it! https://t.co/NArlUB1eoJ",
+   "likes": 9,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Ice maker & water dispenser",
+   "brand": "LG",
+   "gist": "Found the clog in LG water line that killed the dispenser (DIY fix)",
+   "wish": "",
+   "representativeness": 0.486
+  },
+  {
+   "id": "2113300962723205521",
+   "url": "https://x.com/folop16/status/2113300962723205521",
+   "username": "folop16",
+   "created_at": "2026-10-22T16:06:27.000Z",
+   "text": "I need a “smart fridge” so I can watch youtube videos on the fridge screen, and have a camera inside to see what I want before I open the fridge",
+   "likes": 6,
+   "reposts": 0,
+   "sentiment": "positive",
+   "category": "Smart features & apps",
+   "brand": "none",
+   "gist": "Wants a smart fridge with a screen and an inside camera",
+   "wish": "A smart fridge with a screen and an inside camera",
+   "representativeness": 0.471
+  },
+  {
+   "id": "2112198321083134122",
+   "url": "https://x.com/DaddyKlaus23/status/2112198321083134122",
+   "username": "DaddyKlaus23",
+   "created_at": "2026-10-19T15:04:57.000Z",
+   "text": "@billysandytodd @Frigidaire Is this the one with a freezer on top fridge on the bottom with no ice maker? Usually those are more reliable.",
+   "likes": 1,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Durability & longevity",
+   "brand": "none",
+   "gist": "Top-freezer models without ice makers are more reliable",
+   "wish": "Simple top-freezer models without ice makers",
+   "representativeness": 0.419
+  },
+  {
+   "id": "2107298286566875423",
+   "url": "https://x.com/missiletech80/status/2107298286566875423",
+   "username": "missiletech80",
+   "created_at": "2026-10-06T02:33:57.000Z",
+   "text": "We bought this 6 month old fridge from a repair guy which Whirlpool decided to just replace the fridge.   So the only problem was the ice maker. Since I can't help myself I decided to try fixing it.   Water to the inlet, no water on the filter head... Bad inlet valve ($80) right? https://t.co/71bBxK6pYO",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Ice maker & water dispenser",
+   "brand": "Whirlpool",
+   "gist": "DIY diagnosing a bad inlet valve on a Whirlpool ice maker",
+   "wish": "",
+   "representativeness": 0.39
+  },
+  {
+   "id": "2105634585732137214",
+   "url": "https://x.com/jmdraper22/status/2105634585732137214",
+   "username": "jmdraper22",
+   "created_at": "2026-10-01T12:23:00.000Z",
+   "text": "@ChickensInBack @ARmastrangelo @GE_Appliances I stopped buying built in ice maker. Never last. Usually the 1st thing to break. So we bought a Brio counter top ice maker. Love it. And our whirlpool fridge is 10yrs old and works flawlessly. Freezer on bottom. 👍🏼",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "positive",
+   "category": "Ice maker & water dispenser",
+   "brand": "Whirlpool",
+   "gist": "Built-in ice makers never last; 10-yr Whirlpool bottom-freezer flawless",
+   "wish": "A fridge without a fragile built-in ice maker",
+   "representativeness": 0.39
+  },
+  {
+   "id": "2112224657831002373",
+   "url": "https://x.com/TastingTable/status/2112224657831002373",
+   "username": "TastingTable",
+   "created_at": "2026-10-19T16:49:36.000Z",
+   "text": "Buying a refrigerator is a big decision; it's important to do your research. Some Whirlpool side-by-side fridges have a troublesome design flaw that affects the ice maker. https://t.co/x1Qq181plL",
+   "likes": 0,
+   "reposts": 0,
+   "sentiment": "neutral",
+   "category": "Ice maker & water dispenser",
+   "brand": "Whirlpool",
+   "gist": "Media article: Whirlpool side-by-side ice maker design flaw",
+   "wish": "",
+   "representativeness": 0.39
+  }
+ ]
+}
