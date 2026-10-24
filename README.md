@@ -26,7 +26,7 @@ pull posts ─► dedupe ─► filter noise ─► label each post ─► group
 
 ## Quick start (fresh clone)
 
-Requirements: Python 3.10+, Node 18+.
+Requirements: Python 3.10+, Node 18+ (tested on Node 20.11+). Works in macOS/Linux terminals and Windows Git Bash.
 
 ```bash
 git clone https://github.com/Tomn223/gripe && cd gripe

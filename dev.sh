@@ -26,7 +26,7 @@ if [[ ! -e backend/.venv/$VBIN/uvicorn && ! -e backend/.venv/$VBIN/uvicorn.exe ]
   VBIN=bin; [[ -d backend/.venv/Scripts ]] && VBIN=Scripts
   backend/.venv/$VBIN/python -m pip install -q -r backend/requirements.txt
 fi
-if [[ ! -d frontend/node_modules ]]; then
+if [[ ! -d frontend/node_modules || frontend/package-lock.json -nt frontend/node_modules/.package-lock.json ]]; then
   echo "› installing frontend deps"; (cd frontend && npm install --silent)
 fi
 [[ -f backend/.env ]] || echo "› no backend/.env (fine: cached topics work offline; set XAI_API_KEY for live topics)"
