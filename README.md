@@ -114,19 +114,6 @@ To run a live end-to-end check from the CLI: `backend/.venv/bin/python scripts/l
 
 `representativeness = 0.65 × labeler score + 0.25 × log-normalized likes + 0.10 × (negative ? 1 : 0)`.
 
-### Seed data
-
-`seed/*.json` holds **real X posts** for the three demo topics. They were pulled with brand-neutral complaint searches (6–13 searches per topic, mixing relevancy and recency) through the X API, then noise-filtered and labeled by hand by reading each post. `scripts/build_seed.py` turns them into the caches, adding the hand-written headlines and dig-deeper chips. Kept posts: refrigerators 65 of 164, standing desks 64 of 263, e-bikes 73 of 205. Brand counts reflect the search terms, not market share.
-
-## 60-second demo script
-
-1. **(0–10s)** "Founders sit on the biggest focus group in the world and never read it. Gripe turns X into market research." The landing page shows one question: *What market are you thinking about entering?*
-2. **(10–20s)** Click **refrigerators**. The loading screen walks through the real pipeline: 164 posts pulled, 99 dropped as noise, 65 labeled, 9 themes.
-3. **(20–35s)** Read the headline, then point at the hero chart: ice makers (21) beat everything, and repair & warranty pain (13) is second. "About 60% of raw X results are ads and jokes, and Gripe throws them out."
-4. **(35–45s)** Click the **Ice maker** bar. The panel shows the actual posts, most representative first, each linking to x.com with likes and date. "Every number is backed by evidence."
-5. **(45–55s)** Click **Which brands come up most in repair & warranty?**, then **What do people wish existed?**: "a dumb, cheap, reliable fridge." That's a product thesis.
-6. **(55–60s)** Type a new market (e.g. *air fryers*). Grok searches X live through `x_search`, labels the posts, and the result is cached for next time.
-
 ## Project layout
 
 ```
