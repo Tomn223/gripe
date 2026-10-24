@@ -30,9 +30,6 @@ export default function Landing({ onSubmit, examples, error }) {
           </p>
         </div>
         <div className="landing-form">
-          <label className="input-label" htmlFor="market">
-            What market are you thinking about entering?
-          </label>
           <form
             className="big-input"
             onSubmit={(e) => {
@@ -45,21 +42,20 @@ export default function Landing({ onSubmit, examples, error }) {
               autoFocus
               value={value}
               onChange={(e) => setValue(e.target.value)}
-              placeholder="e.g. air fryers, dog harnesses, CRMs..."
+              aria-label="Market"
+              placeholder="What market are you exploring?"
             />
             <button type="submit" disabled={!value.trim()}>
               Find the gripes <span aria-hidden>→</span>
             </button>
           </form>
           <div className="try-row">
-            <span className="try-label">Try:</span>
             {cached.map((x) => (
               <button key={x} className="chip chip-instant" onClick={() => onSubmit(x)} title="Cached, loads instantly">
                 <span className="bolt" aria-hidden>⚡</span>
                 {x}
               </button>
             ))}
-            <span className="instant-note">instant</span>
           </div>
         </div>
         {error && <div className="error">{error}</div>}
