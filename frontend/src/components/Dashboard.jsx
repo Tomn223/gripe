@@ -65,13 +65,13 @@ export default function Dashboard({ result, onHome, onSearch }) {
 
       <section className="hero-summary card">
         <div className="eyebrow">
-          {result.topic} · {total} genuine posts from {result.stats.raw} pulled
+          {result.topic} · {total} genuine posts from {result.stats.deduped} pulled
           {result.date_range && ` · ${fmtDate(result.date_range.from)} – ${fmtDate(result.date_range.to)}`}
         </div>
         <h1 className="headline">{result.summary.headline}</h1>
         <p className="summary-text">{result.summary.text}</p>
         <div className="pipeline-strip">
-          <span><b>{result.stats.raw}</b> pulled</span>
+          <span><b>{result.stats.deduped}</b> unique posts pulled</span>
           <span className="arrow">→</span>
           <span><b>{result.stats.noise_dropped}</b> noise dropped</span>
           <span className="arrow">→</span>
