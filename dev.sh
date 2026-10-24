@@ -9,7 +9,7 @@ BACKEND_PORT="${BACKEND_PORT:-8000}"
 FRONTEND_PORT="${FRONTEND_PORT:-5173}"
 
 if [[ "${1:-}" == "--stop" ]]; then
-  [[ -f .dev-pids ]] && while read -r pid; do kill "$pid" 2>/dev/null || true; done < .dev-pids
+  [[ -f .dev-pids ]] && while read -r pid; do kill -- "-$pid" 2>/dev/null || kill "$pid" 2>/dev/null || true; done < .dev-pids
   rm -f .dev-pids; echo "stopped"; exit 0
 fi
 
@@ -27,8 +27,9 @@ run_frontend() { (cd frontend && GRIPE_BACKEND_URL="http://127.0.0.1:$BACKEND_PO
 
 if [[ "${1:-}" == "--bg" ]]; then
   mkdir -p logs
-  run_backend > logs/backend.log 2>&1 & echo $! > .dev-pids
-  run_frontend > logs/frontend.log 2>&1 & echo $! >> .dev-pids
+  # each server gets its own process group so --stop can take down the whole tree
+  setsid bash -c "$(declare -f run_backend); BACKEND_PORT=$BACKEND_PORT run_backend" > logs/backend.log 2>&1 & echo $! > .dev-pids
+  setsid bash -c "$(declare -f run_frontend); BACKEND_PORT=$BACKEND_PORT FRONTEND_PORT=$FRONTEND_PORT run_frontend" > logs/frontend.log 2>&1 & echo $! >> .dev-pids
   echo "backend  → http://localhost:$BACKEND_PORT  (logs/backend.log)"
   echo "frontend → http://localhost:$FRONTEND_PORT  (logs/frontend.log)"
   exit 0
