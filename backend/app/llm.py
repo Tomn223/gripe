@@ -33,7 +33,7 @@ def extract_json(text: str):
 
 
 class GrokClient:
-    def __init__(self, api_key: str, base_url: str = "https://api.x.ai/v1", transport=None, timeout=240.0):
+    def __init__(self, api_key: str, base_url: str = "https://api.x.ai/v1", transport=None, timeout=480.0):
         if not api_key:
             raise LLMError("XAI_API_KEY is not set")
         self.base_url = base_url.rstrip("/")

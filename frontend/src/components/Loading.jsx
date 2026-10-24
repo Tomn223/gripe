@@ -1,6 +1,13 @@
+import { useEffect, useState } from 'react'
 import Logo from './Logo'
 
 export default function Loading({ topic, stages, onCancel }) {
+  const [secs, setSecs] = useState(0)
+  useEffect(() => {
+    const t = setInterval(() => setSecs((x) => x + 1), 1000)
+    return () => clearInterval(t)
+  }, [])
+  const elapsed = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`
   const shown = stages.length
     ? stages
     : [{ key: 'pull', label: 'Pulling posts from X', status: 'running', detail: 'connecting…' }]
@@ -25,6 +32,9 @@ export default function Loading({ topic, stages, onCancel }) {
             </li>
           ))}
         </ol>
+        <div className="stage-detail" style={{ textAlign: 'center', marginBottom: 8 }}>
+          {elapsed} elapsed · new markets take a few minutes, cached ones are instant
+        </div>
         <button className="link" onClick={onCancel}>
           Cancel
         </button>

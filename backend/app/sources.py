@@ -7,7 +7,7 @@
 """
 import datetime as dt
 import re
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import httpx
 
 from .llm import GrokClient, extract_json, response_text_and_citations
@@ -118,16 +118,25 @@ class XaiXSearchSource:
         groups = [queries[i::n] for i in range(n)]
         groups = [g for g in groups if g]
         per_call = max(15, min(50, max_posts // max(1, len(groups))))
-        posts, unverified = [], 0
+        posts, unverified, errors = [], 0, []
+        if progress:
+            progress(0, f"Grok is searching X (0/{len(groups)} searches done, usually 1-4 min)")
         with ThreadPoolExecutor(max_workers=len(groups)) as ex:
             futs = [ex.submit(self._one, topic, g, per_call) for g in groups]
-            for i, f in enumerate(futs):
-                got, unv = f.result()
-                posts += got
-                unverified += unv
+            done = 0
+            for f in as_completed(futs):
+                done += 1
+                try:
+                    got, unv = f.result()
+                    posts += got
+                    unverified += unv
+                except Exception as e:  # one slow/failed search shouldn't sink the whole run
+                    errors.append(str(e)[:200])
                 if progress:
-                    progress(len(posts), f"search call {i + 1}/{len(groups)}")
-        return posts, {"unverified_dropped": unverified, "search_calls": len(groups)}
+                    progress(len(posts), f"Grok is searching X ({done}/{len(groups)} searches done)")
+        if errors and not posts:
+            raise RuntimeError("all X searches failed: " + errors[0])
+        return posts, {"unverified_dropped": unverified, "search_calls": len(groups), "search_errors": errors}
 
     def volume(self, topic):
         return None
