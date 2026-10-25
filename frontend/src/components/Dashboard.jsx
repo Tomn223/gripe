@@ -247,6 +247,23 @@ export default function Dashboard({ result, onHome, onSearch }) {
         )}
       </section>
 
+      <section className="track-card">
+        <div>
+          <div className="track-title">Track this market with Mika, our GrokBot</div>
+          <div className="track-sub">
+            Opens a GitHub issue for this market. Every week Mika re-searches X, ranks the gripes, flags anything new or spiking, and posts the update on the issue. Click Subscribe on the issue to get the updates by email.
+          </div>
+        </div>
+        <a
+          className="track-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://github.com/Tomn223/gripe/issues/new?title=${encodeURIComponent('Track: ' + (result.topic || ''))}&body=${encodeURIComponent('Please track the "' + (result.topic || '') + '" market and post weekly gripe updates here.\n\n(Mika, our GrokBot, picks up open issues titled "Track: <market>" every Monday.)')}`}
+        >
+          Track weekly ↗
+        </a>
+      </section>
+
       <details className="how-grok">
         <summary>How Grok powers this</summary>
         <ol>
